@@ -14,9 +14,7 @@ const HomeSubTitle = () => {
           <p>Welcome to my portfolio</p>
       </div>
       <div className="flex my-5 px-8">
-        <Link href="/Projects">
-          <a className="btn btn-wide btn-secondary">My Work</a>
-        </Link>
+        <a data-scroll="projects" href="#projects" className="btn btn-wide btn-secondary text-dark font-electrolize bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">My Work</a>
       </div>
     </div>
   )

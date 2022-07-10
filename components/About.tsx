@@ -1,26 +1,33 @@
 import React from 'react'
 import Head from "next/head"
-import Link from "next/link"
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className='mt-32'>
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
         </Head>
-        <div className="text-5xl text-center text-white font-semibold font-bakbakone">
-          <p>Hello, I'm <span className="text-pink">Andrew</span>.</p>
+        <div className="text-5xl text-center text-white font-semibold font-spacegrotesk">
+          <p>Hello, I'm <span className="text-seagreen">Andrew</span>.</p>
         </div>
-        <div className="text-white text-xl my-10 mx-20 px-20">
-        I'm a full stack python developer located in San Jose California, and I love to build. Whether it's old trucks, models, or full stack python apps, ....I love to build and I love the grind.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div className="text-white text-xl font-electrolize my-10 mx-20 px-20">
+        I'm a software engineer located in San Jose California, and I love to build. Whether it's old trucks, gundam models, or full stack python and web apps, you'll find me buckled down and grinding until the job is done.
         </div>
-        <div className="flex justify-center my-20">
-            <Link href="/Contact">
-            <a className="btn btn-secondary">Message me!</a>
-            </Link>
+        <div className="text-white text-xl font-electrolize my-10 mx-20 px-20">
+        With a background in the medical field and art, my innate desire to always learn something new allows me to continually expand and diversify my skills. My long term goal is to become a blockchain developer in Rust or Solidity. Until then...let's build something together!
+        </div>
+        <div className="flex justify-center mt-20 mb-10">
+          <a data-scroll="contact" href="#contact" className="btn btn-wide btn-secondary text-dark font-spacegrotesk bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">Contact me!</a>
+        </div >
+        <div className='flex justify-center'>
+          <div className="mx-10">
+            <a href="https://www.linkedin.com/in/andrewfinsand/" target="_blank"><img src = {"linkedinIcon.png"} className="object-scale-down"></img></a>
+          </div>
+          <div className="mx-10">
+            <a href="https://github.com/andfinsand" target="_blank"><img src = {"githubIcon.png"} className="object-scale-down"></img></a>
+          </div>
         </div>
     </div>
   )

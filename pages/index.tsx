@@ -3,13 +3,14 @@ import type { NextPage } from 'next'
 import Navbar from '../components/Navbar'
 import HomeTitle from '../components/HomeTitle'
 import HomeSubTitle from '../components/HomeSubTitle'
+import ProjectCards from '../components/ProjectCards'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-50 flex flex-col justify-center w-full relative">
-      <img src = {"backgroundDark.png"} className="w-full h-full object-cover absolute"></img>
+    <div className="bg-bgImage bg-cover">
+      {/* <img src = {"blackWaves.jpg"} className="w-full h-full object-cover absolute"></img> */}
         <Navbar />
-        <main className="flex flex-col h-screen mx-32 mt-32 relative">
+        <main className="flex flex-col h-screen mx-32">
           <div className="mt-20">
             <HomeTitle />
           </div>
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
             <HomeSubTitle />
           </div>
         </main>
+        <ProjectCards />
     </div>
   )
 }
