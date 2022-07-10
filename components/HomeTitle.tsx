@@ -12,7 +12,7 @@ const HomeTitle = () => {
         <div className="text-6xl font-bakbakone font-bold text-white">
             <p>Full Stack Python Developer</p>
         </div>
-        <div className="text-4xl font-bakbakone text-pink">
+        <div className="text-5xl font-bakbakone text-pink">
             <p>Andrew Finsand</p>
         </div>
     </div>
