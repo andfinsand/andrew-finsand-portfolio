@@ -4,7 +4,7 @@ import Head from 'next/head'
 const VertProjectText = () => {
   return (
     <div className="bg-black">
-        <div className="flex flex-col justify-center bg-black font-bold text-white text-8xl py-10 pl-16 pr-20">
+        <div className="flex flex-col justify-center bg-black font-bold text-white text-8xl py-10 pl-24 pr-20">
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -14,7 +14,7 @@ const ProjectCards = () => {
         <div className="flex">
         <VertProjectText />
             <div className="bg-black w-screen flex justify-around py-52 pl-20">
-                <div className="card w-96 bg-dark shadow-xl border border-seagreen">
+                <div className="card w-96 bg-medium shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none">
                     <figure className="p-5">
                         <img src="tokenRecordsThumb.png" alt="Project Image" className="rounded-xl" />
                     </figure>
@@ -28,7 +28,7 @@ const ProjectCards = () => {
                 </div>
             </div>
             <div className="bg-black w-screen flex justify-around py-52 pr-40">
-                <div className="card w-96 bg-dark shadow-xl border border-seagreen">
+                <div className="card w-96 bg-medium shadow-xl border rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none">
                     <figure className="p-5">
                         <img src="coolGymThumb.PNG" alt="Project Image" className="rounded-xl" />
                     </figure>

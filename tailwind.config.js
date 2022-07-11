@@ -8,6 +8,8 @@ module.exports = {
     colors: {
       white: '#ffffff',
       black: '#000000',
+      light: '#707080',
+      medium: '#282A35',
       darkdark: '#202020',
       dark: '#1C1D25',
       slate: '#94b8a3',
@@ -29,9 +31,10 @@ module.exports = {
       backgroundImage: {
         'bgImage': "url('/blackWaves.jpg')",
       },
-      // backgroundSize: {
-      //   'bgSize': "100%",
-      // },
+      dropShadow: {
+        'custom': '0px 3px 3px rgba(0, 0, 0, .25)',
+        'customLight': '0px 4px 3px rgba(0, 0, 0, .55)',
+      },
     }
   },
   plugins: [require('daisyui')],
