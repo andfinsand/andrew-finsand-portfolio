@@ -4,7 +4,8 @@ import VertProjectText from '../components/VertProjectText'
 
 const ProjectCards = () => {
   return (
-    <div className="h-1" id="projects">
+    // <div className="h-1 border-t-2 border-seagreen" id="projects">
+    <div id="projects">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />

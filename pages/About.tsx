@@ -5,7 +5,7 @@ import Contact from '../components/Contact'
 
 const About = () => {
   return (
-    <div className="bg-bgImage bg-cover">
+    <div className="bg-bgImage bg-contain relative">
     {/* <div className="bg-slate-50 flex flex-col justify-center w-full relative"> */}
       {/* <img src = {"blackWaves.jpg"} className="w-full h-full object-cover absolute"></img> */}
         <Navbar />

@@ -13,7 +13,7 @@ const HomeSubTitle = () => {
       <div className="text-3xl text-white font-semibold font-electrolize">
           <p>Welcome to my portfolio</p>
       </div>
-      <div className="flex my-5 px-8">
+      <div className="flex my-5 mx-8">
         <a data-scroll="projects" href="#projects" className="btn btn-wide btn-secondary text-dark font-electrolize bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">My Work</a>
       </div>
     </div>

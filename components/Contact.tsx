@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="h-1" id="contact">
+    // <div className="h-1 border-t-2 border-seagreen" id="contact">
+    <div id="contact">
         <div className="flex justify-center bg-black p-20">
             <div className='bg-dark w-1/2 border border-seagreen rounded-xl p-10'>
                 <form

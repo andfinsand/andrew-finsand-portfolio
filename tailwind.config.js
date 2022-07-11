@@ -24,10 +24,14 @@ module.exports = {
         'bakbakone': ['Bakbak One', 'sans-serif'],
         'play': ['Play', 'sans-serif'],
         'spacegrotesk': ['Space Grotesk', 'sans-serif'],
+        'kanit': ['Kanit', 'sans-serif'],
       },
       backgroundImage: {
         'bgImage': "url('/blackWaves.jpg')",
       },
+      // backgroundSize: {
+      //   'bgSize': "100%",
+      // },
     }
   },
   plugins: [require('daisyui')],
