@@ -17,6 +17,9 @@ const Navbar = () => {
                     <a className="btn btn-ghost normal-case text-xl mx-10 hover:text-seagreen">About</a>
                 </Link>
             </div>
+            <div className="text-left">
+                <a data-scroll="skills" href="#skills" className="btn btn-ghost normal-case text-xl mx-10 hover:text-seagreen">Skills</a>
+            </div>
         </div>
     </div>
   )

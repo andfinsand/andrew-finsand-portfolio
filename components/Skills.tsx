@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const Skills = () => {
   return (
-    <div className="bg-light p-20">
+    <div className="bg-light p-20" id="skills">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -156,12 +156,6 @@ const Skills = () => {
                         <img className="mx-4" src = {"figmaIcon.png"}></img>
                         <p className="self-center mx-2">
                         Figma
-                        </p>
-                    </div>
-                    <div className="flex text-white mt-5 px-10">
-                        <img className="mx-4" src = {"gimpIcon.png"}></img>
-                        <p className="self-center mx-2">
-                        Gimp
                         </p>
                     </div>
                 </div>
