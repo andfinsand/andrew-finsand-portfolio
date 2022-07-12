@@ -21,8 +21,8 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
-            <div className='self-center bg-dark border border-seagreen rounded-xl p-10'>
+            {/* form */}
+            <div className='self-center bg-medium rounded-xl p-10'>
                 <form
                     action="https://formspree.io/f/mdobokkz"
                     method="POST"
@@ -56,7 +56,7 @@ const Contact = () => {
                             className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400 md:col-span-2"
                         ></textarea>
                     </div>
-                    <div className="flex self-left">
+                    <div className="flex self-end">
                         <button className="btn w-36 btn-secondary text-dark font-spacegrotesk bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">
                         Send
                         </button>
