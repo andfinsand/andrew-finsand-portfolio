@@ -22,6 +22,10 @@ body {
   margin-right: calc(-50vw + 50% + 10px);
 }
 
-/* .font-link {
-  font-family: 'Electrolize',;
-} */
+.greyGradient {
+  background-image: linear-gradient(150deg, #282A35 60%, #1D1E26 100%);
+}
+
+.greyGradientTwo {
+  background-image: linear-gradient(150deg, #282A35 30%, #1D1E26 100%);
+}

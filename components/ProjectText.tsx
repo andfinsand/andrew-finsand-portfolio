@@ -15,23 +15,13 @@ const ProjectText = () => {
       {/* Text */}
       <div className="flex justify-center bg-black h-72">
         <div className="wideParent flex justify-center bg-medium h-40 -skew-y-3 -skew-x-3">
-          <div className="wideBox flex justify-center bg-dark self-center font-bold text-7xl drop-shadow-customLight skew-y-3 skew-x-3 p-5">
+          <div className="wideBox flex justify-center bg-dark self-center font-bold text-7xl drop-shadow-customDark skew-y-3 skew-x-3 p-5">
             <div className="self-center text-seagreen font-kanit italic font-bold">
             P R O<span className="text-white"> J E C T S</span>
             </div>
           </div>
         </div>
       </div>
-
-      {/* <div className="flex justify-center">
-        <div className="flex justify-center bg-medium height-32 w-32">
-          <div className="flex justify-center bg-dark -w-screen font-bold text-8xl mt-20 mb-32 p-5">
-              <div className="text-seagreen font-kanit italic font-bold">
-                  P R O<span className="text-white"> J E C T S</span>
-              </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }

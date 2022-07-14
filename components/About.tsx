@@ -3,20 +3,20 @@ import Head from "next/head"
 
 const AboutMe = () => {
   return (
-    <div className='flex flex-col justify-center mt-32'>
+    <div className="flex flex-col justify-center h-screen " id="about">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
         </Head>
-        <div className="text-5xl text-center text-white font-semibold font-spacegrotesk mb-10">
-          <p>Hello, I'm <span className="text-seagreen">Andrew</span>.</p>
+        <div className="text-4xl text-center text-white font-semibold font-bakbakone font-normal mb-10">
+          <p>About <span className="text-seagreen">Me</span></p>
         </div>
-        <div className="text-white text-xl font-electrolize my-5 mx-40">
-        I'm a software developer located in San Jose California, and I love to build. Whether it's classic trucks, gundam models, or full stack python and web apps, you'll find me buckled down and grinding until the job is done.
+        <div className="text-white text-xl font-electrolize my-5 mx-0 md:mx-20 lg:mx-40">
+        Hello! I'm Andrew, a software developer located in San Jose California, and I love to build. Whether it's classic trucks, gundam models, or full stack python and web apps, you'll find me buckled down and grinding until the job is done.
         </div>
-        <div className="text-white text-xl font-electrolize my-5 mx-40">
-        With a diverse background, from medical to art, my innate desire to always learn something new allows me to continually broaden and elevate my skills. My long term goal is to become a blockchain developer in Rust or Solidity. Until then...let's build together!
+        <div className="text-white text-xl font-electrolize my-5 mx-0 md:mx-20 lg:mx-40">
+        With a diverse background from medical to art, my innate desire to learn allows me to continually broaden and elevate my skills. My long term goal is to become a blockchain developer in Rust or Solidity. Until then...let's build together!
         </div>
         {/* <div>
           Im not your average developer. I started off my journey as an EMT working late hours on an ambulance in the Bay Area. After a couple years, the need to supplement my knowledge drove me to complete my undergrad in Kinesiology at California State Univseristy Monterey Bay in 2018. During all this time, I was learning about and trading cryptocurrencies. With this fascination of blockchain technology, I began to dive deeper into the endless abyss that is crypto, and soon realized, I had to learn as much as possible. But in order to do so, I had to understand the basic building blocks of code, which led me to successfully complete a 7 month long intensive coding bootcamp at Coding Dojo.
@@ -28,7 +28,7 @@ const AboutMe = () => {
           "Preparation for tomorrow is hard work today." - Bruce Lee
         </div> */}
         <div className="flex justify-center mt-10 mb-10">
-          <a data-scroll="contact" href="#contact" className="btn btn-wide btn-secondary text-dark font-spacegrotesk bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">Contact</a>
+          <a data-scroll="contact" href="#contact" className="btn btn-wide btn-secondary text-dark font-bold bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">Contact</a>
         </div >
     </div>
   )

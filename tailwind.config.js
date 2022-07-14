@@ -34,6 +34,7 @@ module.exports = {
       dropShadow: {
         'custom': '0px 3px 3px rgba(0, 0, 0, .25)',
         'customLight': '0px 4px 3px rgba(0, 0, 0, .55)',
+        'customDark': '3px 5px 2px rgba(0, 0, 0, .55)',
       },
     }
   },
