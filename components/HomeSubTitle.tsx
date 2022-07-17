@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const HomeSubTitle = () => {
   return (
-    <div>
+    <div className="my-32 ml-32">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" />

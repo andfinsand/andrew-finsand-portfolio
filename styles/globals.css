@@ -13,13 +13,14 @@ body {
 
 .wideParent {
   width: 1000px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: calc(-50vw + 50% + 12px);
 }
 
 .wideBox {
   width: calc(100vw - 20px);
-  margin-left: calc(-50vw + 50% + 10px);
-  margin-right: calc(-50vw + 50% + 10px);
+  margin-left: calc(-50vw + 50% + 5px);
+  margin-right: calc(-50vw + 50% + 22px);
 }
 
 .greyGradient {

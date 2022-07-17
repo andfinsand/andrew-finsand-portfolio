@@ -14,26 +14,29 @@ import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
-      <div className="bg-bgImage bg-[length:1920px_1920px] bg-absolute bg-no-repeat"> {/* for responsiveness, consider 'bg-cover and bg-center'. This will result in a more zoomed in bg, but no white spaces between divs. */}
+      <div> {/* for responsiveness, consider 'bg-cover and bg-center'. This will result in a more zoomed in bg, but no white spaces between divs. */}
         {/* <img src = {"blackWaves.jpg"} className="w-full h-full object-cover absolute"></img> */}
         {/* Consider using        sm:bg-[length:2000px_2000px] */}
           <Navbar />
-          <main className="flex flex-col h-auto mx-32 pt-20">
-            <div className="mt-20">
-              {/* <BackgroundImage /> */}
-              <HomeTitle />
+          <main className="flex flex-col">
+            <div className="bg-bgImage bg-cover bg-center">
+              <div>
+                <HomeTitle />
+              </div>
+              <div>
+                <HomeSubTitle />
+              </div>
+              <div>
+                <About />
+              </div>
             </div>
-            <div className="mt-20">
-              <HomeSubTitle />
-            </div>
-            <div className="m-20 mx-0 mt-52 md:mt-20">
-              <About />
+            <div>
+              <ProjectCards />
+              <Skills />
+              <Contact />
+              <Footer />
             </div>
           </main>
-          <ProjectCards />
-          <Skills />
-          <Contact />
-          <Footer />
       </div>
   )
 }
