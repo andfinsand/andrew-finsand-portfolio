@@ -23,7 +23,7 @@ const Contact = () => {
                 </div>
             </div>
             {/* form */}
-            <div className='greyGradientTwo self-center bg-medium rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none p-10'>
+            <div className='greyGradientTwo self-center bg-medium rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none p-10 mb-20'>
                 <form
                     action="https://formspree.io/f/mbjwvwep"
                     method="POST"
@@ -60,7 +60,7 @@ const Contact = () => {
                             name="message"
                         ></textarea>
                     </div>
-                    <div className="flex self-end">
+                    <div className="flex self-center md:self-end">
                         <button className="btn w-36 btn-secondary text-dark font-bold bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">
                         Send
                         </button>

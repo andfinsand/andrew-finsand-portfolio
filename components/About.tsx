@@ -18,17 +18,8 @@ const AboutMe = () => {
         <div className="text-white text-xl font-electrolize my-5 mx-7 md:mx-20 lg:w-2/3 self-center">
         With a diverse background, from the medical field to art, my innate desire to learn allows me to continually broaden and elevate my skills. My long term goal is to become a blockchain developer in Rust or Solidity. Until then...let's build together!
         </div>
-        {/* <div>
-          Im not your average developer. I started off my journey as an EMT working late hours on an ambulance in the Bay Area. After a couple years, the need to supplement my knowledge drove me to complete my undergrad in Kinesiology at California State Univseristy Monterey Bay in 2018. During all this time, I was learning about and trading cryptocurrencies. With this fascination of blockchain technology, I began to dive deeper into the endless abyss that is crypto, and soon realized, I had to learn as much as possible. But in order to do so, I had to understand the basic building blocks of code, which led me to successfully complete a 7 month long intensive coding bootcamp at Coding Dojo.
-
-          I now live in San Jose California, and build full stack applications primarily in Python on my freetime. I've also done freelancing for a small family business, redesigning their website with React and Nextjs.
-
-          All in all, I'm a builder, and I love the grind. Whether it's classic trucks, gundam models, or programs, you'll find me buckled down and focused until the job is done. Hard work always pays off in one way or another, and there's nothing better than admiring the fruits of labor.
-
-          "Preparation for tomorrow is hard work today." - Bruce Lee
-        </div> */}
         <div className="flex justify-center mt-10 mb-10">
-          <a data-scroll="contact" href="#contact" className="btn btn-wide btn-secondary text-dark font-bold bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">Contact</a>
+          <a data-scroll="contact" href="#contact" className="btn btn-wide btn-secondary rounded-full text-dark font-bold bg-seagreen border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">Contact</a>
         </div >
     </div>
   )

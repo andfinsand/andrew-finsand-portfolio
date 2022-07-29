@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-screen h-15 z-[100] bg-black text-white">
+    <div className="fixed w-screen h-15 z-[100] bg-black text-white shadow-custom shadow-seagreen">
         <div className="navbar justify-center">
 
             {/* replace home button with logo, position to left and return to homepage. */}

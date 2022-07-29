@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import SkillsText from '../components/SkillsText'
 
 const Skills = () => {
   return (
@@ -9,9 +10,10 @@ const Skills = () => {
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Electrolize&family=Kanit:ital,wght@1,600;1,800;1,900&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
         </Head>
-        <div className="h-auto bg-light text-light font-kanit font-thin md:columns-2  lg:flex justify-between justify-between">
+        <SkillsText />
+        <div className="h-auto bg-light text-light font-kanit font-thin md:columns-2  lg:flex justify-between">
             {/* Frontend */}
-            <div className="flex justify-center bg-light w-72 md:mt-0 lg:my-5">
+            <div className="flex justify-center bg-light w-72 md:mt-0 lg:my-5 mx-2">
                 <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down" src = {"frontendIcon.png"}></img>
@@ -32,6 +34,12 @@ const Skills = () => {
                         <img className="mx-4" src = {"javascriptIcon.png"}></img>
                         <p className="self-center mx-2">
                         Javascript
+                        </p>
+                    </div>
+                    <div className="flex text-white mt-5 px-10">
+                        <img className="mx-4" src = {"typescriptIcon.png"}></img>
+                        <p className="self-center mx-2">
+                        Typescript
                         </p>
                     </div>
                     <div className="flex text-white mt-5 px-10">
@@ -59,12 +67,6 @@ const Skills = () => {
                         </p>
                     </div>
                     <div className="flex text-white mt-5 px-10">
-                        <img className="mx-4" src = {"typescriptIcon.png"}></img>
-                        <p className="self-center mx-2">
-                        Typescript
-                        </p>
-                    </div>
-                    <div className="flex text-white mt-5 px-10">
                         <img className="mx-5" src = {"jinja2Icon.png"}></img>
                         <p className="self-center ml-3">
                         Jinja2
@@ -73,7 +75,7 @@ const Skills = () => {
                 </div>
             </div>
             {/* Backend */}
-            <div className="flex justify-center bg-light w-72 my-5 break-after-column">
+            <div className="flex justify-center bg-light w-72 my-5 break-after-column lg:mx-2">
                 <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down" src = {"backendIcon.png"}></img>
@@ -121,7 +123,7 @@ const Skills = () => {
                 </div>
             </div>
             {/* DB */}
-            <div className="flex justify-center bg-light w-72 my-5">
+            <div className="flex justify-center bg-light w-72 my-5 lg:mx-2">
                 <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down" src = {"dbIcon.png"}></img>
@@ -141,7 +143,7 @@ const Skills = () => {
                 </div>
             </div>
             {/* Other */}
-            <div className="flex justify-center bg-light w-72 my-5">
+            <div className="flex justify-center bg-light w-72 my-5 lg:mx-2">
                 <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down" src = {"toolsIcon.png"}></img>

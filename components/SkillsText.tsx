@@ -13,11 +13,11 @@ const ProjectText = () => {
       {/* <div className="bg-black h-28">
       </div> */}
       {/* Text */}
-      <div className="flex justify-center h-48">
-        <div className="wideParent flex justify-center bg-medium h-32 -skew-y-3 -skew-x-3">
+      <div className="flex justify-center h-48 -mt-12">
+        <div className="wideParent flex justify-center bg-medium h-32 drop-shadow-customDark -skew-y-3 -skew-x-3">
           <div className="wideBox flex justify-center bg-dark self-center font-bold text-6xl drop-shadow-customDark skew-y-3 skew-x-3 p-5">
             <div className="self-center text-seagreen font-kanit italic font-bold">
-            P R O<span className="text-white"> J E C T S</span>
+            T O O L<span className="text-white"> K I T</span>
             </div>
           </div>
         </div>

@@ -36,6 +36,9 @@ module.exports = {
         'customLight': '0px 4px 3px rgba(0, 0, 0, .55)',
         'customDark': '3px 5px 2px rgba(0, 0, 0, .55)',
       },
+      boxShadow: {
+        'custom': '0 5px 20px -17px rgba(2, 255, 179)',
+      }
     }
   },
   plugins: [require('daisyui')],
