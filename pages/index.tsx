@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
-      <div className="w-full">
+      <div className="w-full" id="home">
           <Navbar />
           <main className="flex flex-col">
             <div className="bg-bgImage bg-cover bg-fixed bg-center">

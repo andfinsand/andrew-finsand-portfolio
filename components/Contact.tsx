@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm, ValidationError } from '@formspree/react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    }, []);
   return (
     // <div className="h-1 border-t-2 border-seagreen" id="contact">
     <div id="contact">
         <div className="flex flex-col justify-center h-screen bg-black p-20 md:flex-row">
-            <div className="m-10 self-center">
-                <div className="text-5xl text-seagreen font-bold font-spacegrotesk m-10">
+            <div data-aos="fade-right" data-aos-mirror="true" className="m-10 self-center">
+                <div className="text-5xl text-seagreen font-bold font-spacegrotesk mt-10 text-center md:mt-0 mx-10 ">
                     Let's Connect!
                 </div>
                 <div className="flex justify-center">
@@ -23,7 +28,7 @@ const Contact = () => {
                 </div>
             </div>
             {/* form */}
-            <div className='greyGradientTwo self-center bg-medium rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none p-10 mb-20'>
+            <div data-aos="fade-left" data-aos-mirror="true" className='greyGradientTwo self-center bg-medium rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none p-10'>
                 <form
                     action="https://formspree.io/f/mbjwvwep"
                     method="POST"
@@ -68,6 +73,8 @@ const Contact = () => {
                 </form>
             </div>
         </div>
+        <div className="text-center bg-black text-light font-bold pt-10 md:pt-0"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
+        <div className="spacer bg-black h-10"></div>
     </div>
   )
 }
