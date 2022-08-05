@@ -8,11 +8,10 @@ const Contact = () => {
         Aos.init({duration: 1500});
     }, []);
   return (
-    // <div className="h-1 border-t-2 border-seagreen" id="contact">
     <div id="contact">
         <div className="flex flex-col justify-center h-screen bg-black p-20 md:flex-row">
             <div data-aos="fade-right" data-aos-mirror="true" className="m-10 self-center">
-                <div className="text-5xl text-seagreen font-bold font-spacegrotesk mt-10 text-center md:mt-0 mx-10 ">
+                <div className="text-5xl text-seagreen font-bold font-spacegrotesk pt-20 text-center md:pt-0 px-10 ">
                     Let's Connect!
                 </div>
                 <div className="flex justify-center">
@@ -73,7 +72,7 @@ const Contact = () => {
                 </form>
             </div>
         </div>
-        <div className="text-center bg-black text-light font-bold pt-10 md:pt-0"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
+        <div className="text-center text-lg bg-black text-light font-bold pt-28 md:pt-0"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
         <div className="spacer bg-black h-10"></div>
     </div>
   )

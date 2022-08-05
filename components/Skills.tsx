@@ -1,27 +1,28 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import SkillsText from '../components/SkillsText'
+import SkillsBanner from './SkillsBanner'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const Skills = () => {
     useEffect(() => {
-        Aos.init({duration: 1500});
+        Aos.init({duration: 1000});
       }, []);
   return (
-    <div className="flex flex-col bg-light p-20" id="skills">
+    <div className="flex flex-col h-auto bg-black p-20" id="skills">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Electrolize&family=Kanit:ital,wght@1,600;1,800;1,900&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
         </Head>
-        <SkillsText />
-        <div className="h-auto bg-light text-light font-kanit font-thin md:columns-2  lg:flex justify-between">
+        <SkillsBanner />
+        <div className="self-center bg-black text-light font-kanit font-thin mt-36 lg:columns-3 xl:flex justify-between">
             {/* Frontend */}
-            <div data-aos="fade-right" data-aos-mirror="true" className="flex justify-center bg-light w-72 md:mt-0 lg:my-5 mx-2">
-                <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
-                    <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
-                        <img className="object-scale-down" src = {"frontendIcon.png"}></img>
+            <div data-aos="fade-up" data-aos-mirror="true" className="break-after-column flex justify-center bg-black w-72 md:mt-0 lg:my-5 mx-2">
+                <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
+                    <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
+                        <img className="object-scale-down h-16" src = {"frontendIcon.png"}></img>
+                        <div className="text-center text-xl text-seagreen font-kanit italic font-semibold pt-1">Front <span className="text-white">End</span></div>
                     </div>
                     <div className="flex text-white mt-5 px-10">
                         <img className="mx-4" src = {"html5.png"}></img>
@@ -71,19 +72,20 @@ const Skills = () => {
                         Tailwind
                         </p>
                     </div>
-                    <div className="flex text-white mt-5 px-10">
+                    {/* <div className="flex text-white mt-5 px-10">
                         <img className="mx-5" src = {"jinja2Icon.png"}></img>
                         <p className="self-center ml-3">
                         Jinja2
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* Backend */}
-            <div data-aos="fade-right" data-aos-mirror="true" className="flex justify-center bg-light w-72 my-5 break-after-column lg:mx-2">
-                <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
-                    <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
-                        <img className="object-scale-down" src = {"backendIcon.png"}></img>
+            <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1600" className="flex justify-center bg-black w-72 my-5 break-after-column lg:mx-2">
+                <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
+                    <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
+                        <img className="object-scale-down h-16" src = {"backendIcon.png"}></img>
+                        <div className="text-center text-xl text-seagreen font-kanit italic font-semibold pt-1">Back <span className="text-white">End</span></div>
                     </div>
                     <div className="flex text-white mt-5 px-10">
                         <img className="mx-4" src = {"pythonIcon.png"}></img>
@@ -98,7 +100,7 @@ const Skills = () => {
                         </p>
                     </div>
                     <div className="flex text-white mt-5 px-10">
-                        <img className="object-scale-down mx-4" src = {"graphqlIcon.png"}></img>
+                        <img className="object-scale-down h-16" src = {"graphqlIcon.png"}></img>
                         <div>
                             <p className="self-center mx-2">
                             GraphQL
@@ -115,7 +117,7 @@ const Skills = () => {
                         </p>
                     </div>
                     <div className="flex text-white mt-5 px-10">
-                        <img className="object-scale-down mx-4" src = {"djangoIcon.png"}></img>
+                        <img className="object-scale-down h-16" src = {"djangoIcon.png"}></img>
                         <div>
                             <p className="self-center mx-2">
                             Django
@@ -128,10 +130,11 @@ const Skills = () => {
                 </div>
             </div>
             {/* DB */}
-            <div data-aos="fade-left" data-aos-mirror="true" className="flex justify-center bg-light w-72 my-5 lg:mx-2">
-                <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
-                    <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
-                        <img className="object-scale-down" src = {"dbIcon.png"}></img>
+            <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2200" className="flex justify-center bg-black w-72 my-5 lg:mx-2">
+                <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
+                    <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
+                        <img className="object-scale-down h-16" src = {"dbIcon.png"}></img>
+                        <div className="text-center text-xl text-seagreen font-kanit italic font-semibold pt-1">Data<span className="text-white">base</span></div>
                     </div>
                     <div className="flex text-white mt-5 px-10">
                         <img className="mx-4" src = {"mysqlIcon.png"}></img>
@@ -148,10 +151,11 @@ const Skills = () => {
                 </div>
             </div>
             {/* Other */}
-            <div data-aos="fade-left" data-aos-mirror="true" className="flex justify-center bg-light w-72 my-5 lg:mx-2">
-                <div className="flex flex-col bg-dark h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
-                    <div className="flex justify-center self-center bg-black h-28 w-72 drop-shadow-custom -mx-20 m-7">
-                        <img className="object-scale-down" src = {"toolsIcon.png"}></img>
+            <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2800" className="flex justify-center bg-black w-72 my-5 lg:mx-2">
+                <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
+                    <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
+                        <img className="object-scale-down h-16" src = {"toolsIcon.png"}></img>
+                        <div className="text-center text-xl text-seagreen font-kanit italic font-semibold pt-1">Other</div>
                     </div>
                     <div className="flex text-white mt-5 px-10">
                         <img className="mx-4" src = {"gitIcon.png"}></img>

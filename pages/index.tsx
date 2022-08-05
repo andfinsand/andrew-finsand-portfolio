@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-// import Image from 'next'
-// import bgImage from "../public/blackWaves.jpg"
 
 import Navbar from '../components/Navbar'
 import HomeTitle from '../components/HomeTitle'
@@ -13,28 +11,18 @@ import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
-      <div className="w-full" id="home">
-          <Navbar />
-          <main className="flex flex-col">
-            <div className="bg-bgImage bg-cover bg-fixed bg-center">
-              <div>
-                <HomeTitle />
-              </div>
-              <div>
-                <HomeSubTitle />
-              </div>
-              <div>
-                <About />
-              </div>
-            </div>
-            <div>
-              <ProjectCards />
-              <Skills />
-              <Contact />
-              <Footer />
-            </div>
-          </main>
+    <div className="flex flex-col" id="home">
+      <Navbar />
+      <div className="bg-bgImage bg-cover bg-fixed bg-center">
+        <HomeTitle />
+        <HomeSubTitle />
+        <About />
       </div>
+      <ProjectCards />
+      <Skills />
+      <Contact />
+      <Footer />
+    </div>
   )
 }
 

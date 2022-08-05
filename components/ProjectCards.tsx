@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import ProjectText from '../components/ProjectText'
+import ProjectsBanner from './ProjectsBanner'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,16 +9,15 @@ const ProjectCards = () => {
         Aos.init({duration: 1500});
     }, []);
   return (
-    // <div className="h-1 border-t-2 border-seagreen" id="projects">
-    <div className="bg-black bg-auto" id="projects">
+    <div id="projects">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
         </Head>
-        <div className="flex flex-col pb-56 px-20">
-        <ProjectText />
-            <div className="flex flex-col md:flex justify-around md:flex-row">
+        <div className="flex flex-col bg-black pb-56 px-20">
+        <ProjectsBanner />
+            <div className="flex flex-col mt-36 md:flex justify-around md:flex-row">
                 {/* Project One */}
                 <div data-aos="fade-right" data-aos-mirror="true" className="self-center greyGradient card w-auto h-max shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none my-5 md:w-2/5 lg:w-1/3">
                     <figure className="drop-shadow-customDark p-5">
