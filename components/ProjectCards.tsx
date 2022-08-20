@@ -28,7 +28,7 @@ const ProjectCards = () => {
                         <p className="font-electrolize mt-2"> A full stack python application to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!</p>
                         <div className="self-center font-bold my-6">Python <span className="font-normal text-seagreen">|</span> Flask <span className="font-normal text-seagreen">|</span> HTML5 <span className="font-normal text-seagreen">|</span> Bootstrap CSS <span className="font-normal text-seagreen">|</span> MySQL</div>
                         <div className="card-actions justify-around my-2">
-                            <div className="self-center text-light font-bold">Coming Soon</div>
+                        <a href="http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com" target="_blank"><button className="btn btn-primary w-20 text-dark font-bold bg-seagreen border-seagreen drop-shadow-customLight hover:bg-dark hover:text-seagreen hover:border-seagreen">Live</button></a>
                             <a href="https://github.com/andfinsand/token-records" target="_blank"><button className="btn btn-primary w-20 text-dark font-bold bg-seagreen border-seagreen drop-shadow-customLight hover:bg-dark hover:text-seagreen hover:border-seagreen">Github</button></a>
                         </div>
                     </div>
