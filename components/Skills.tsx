@@ -18,7 +18,7 @@ const Skills = () => {
         <SkillsBanner />
         <div className="self-center bg-black text-light font-kanit font-thin mt-36 lg:columns-3 xl:flex justify-between">
             {/* Frontend */}
-            <div data-aos="fade-up" data-aos-mirror="true" className="break-after-column flex justify-center bg-black w-72 md:mt-0 lg:my-5 mx-3">
+            <div data-aos="fade-up" className="break-after-column flex justify-center bg-black w-72 md:mt-0 lg:my-5 mx-3">
                 <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down h-16" src = {"frontendIcon.png"}></img>
@@ -81,7 +81,7 @@ const Skills = () => {
                 </div>
             </div>
             {/* Backend */}
-            <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1600" className="flex justify-center bg-black w-72 my-5 break-after-column lg:mx-3">
+            <div data-aos="fade-up" data-aos-duration="1600" className="flex justify-center bg-black w-72 my-5 break-after-column lg:mx-3">
                 <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down h-16" src = {"backendIcon.png"}></img>
@@ -130,7 +130,7 @@ const Skills = () => {
                 </div>
             </div>
             {/* DB */}
-            <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2200" className="flex justify-center bg-black w-72 my-5 lg:mx-3">
+            <div data-aos="fade-up" data-aos-duration="2200" className="flex justify-center bg-black w-72 my-5 lg:mx-3">
                 <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down h-16" src = {"dbIcon.png"}></img>
@@ -151,7 +151,7 @@ const Skills = () => {
                 </div>
             </div>
             {/* Other */}
-            <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2800" className="flex justify-center bg-black w-72 my-5 lg:mx-3">
+            <div data-aos="fade-up" data-aos-duration="2800" className="flex justify-center bg-black w-72 my-5 lg:mx-3">
                 <div className="flex flex-col bg-medium h-auto drop-shadow-customLight rounded-tr-3xl rounded-bl-3xl w-60 pb-12">
                     <div className="flex flex-col justify-center self-center bg-dark h-32 w-72 drop-shadow-custom -mx-20 m-7">
                         <img className="object-scale-down h-16" src = {"toolsIcon.png"}></img>

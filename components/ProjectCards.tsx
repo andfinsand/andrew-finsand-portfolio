@@ -19,7 +19,7 @@ const ProjectCards = () => {
         <ProjectsBanner />
             <div className="flex flex-col mt-36 md:flex justify-around md:flex-row">
                 {/* Project One */}
-                <div data-aos="fade-right" data-aos-mirror="true" className="self-center greyGradient card w-auto h-max shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none my-5 md:w-2/5 lg:w-1/3">
+                <div data-aos="fade-right" className="self-center greyGradient card w-auto h-max shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none my-5 md:w-2/5 lg:w-1/3">
                     <figure className="drop-shadow-customDark p-5">
                         <img src="tokenRecordsThumb.png" alt="Project Image" className="rounded-xl" />
                     </figure>
@@ -34,7 +34,7 @@ const ProjectCards = () => {
                     </div>
                 </div>
                 {/* Project Two */}
-                <div data-aos="fade-left" data-aos-mirror="true" className="self-center greyGradient card w-auto shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none my-5 md:w-2/5 lg:w-1/3">
+                <div data-aos="fade-left" className="self-center greyGradient card w-auto shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none my-5 md:w-2/5 lg:w-1/3">
                     <figure className="drop-shadow-customDark p-5">
                         <img src="coolGymHwy49Thumb.PNG" alt="Project Image" className="rounded-xl" />
                     </figure>

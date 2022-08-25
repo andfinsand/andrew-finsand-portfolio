@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div id="contact">
         <div className="flex flex-col justify-center h-screen bg-black p-20 md:flex-row">
-            <div data-aos="fade-right" data-aos-mirror="true" className="m-10 self-center">
+            <div data-aos="fade-right" className="m-10 self-center">
                 <div className="text-5xl text-seagreen font-bold font-spacegrotesk pt-20 text-center md:pt-0 px-10 ">
                     Let's Connect!
                 </div>
@@ -27,7 +27,7 @@ const Contact = () => {
                 </div>
             </div>
             {/* form */}
-            <div data-aos="fade-left" data-aos-mirror="true" className='greyGradientTwo self-center bg-medium rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none p-10'>
+            <div data-aos="fade-left" className='greyGradientTwo self-center bg-medium rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none p-10'>
                 <form
                     action="https://formspree.io/f/mbjwvwep"
                     method="POST"
