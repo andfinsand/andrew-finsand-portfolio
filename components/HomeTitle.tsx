@@ -15,7 +15,7 @@ const HomeTitle = () => {
       <div className="text-center text-4xl font-bakbakone text-seagreen sm:text-left">
           <p>Andrew Finsand</p>
       </div>
-      <div className="my-36">
+      <div className="mt-32">
         <div className="text-2xl text-white font-semibold font-electrolize">
           <p>Welcome to my portfolio</p>
         </div>
