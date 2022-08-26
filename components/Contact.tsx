@@ -9,7 +9,7 @@ const Contact = () => {
     }, []);
   return (
     <div id="contact">
-        <div className="flex flex-col justify-center h-screen bg-black p-20 md:flex-row">
+        <div className="flex flex-col justify-center h-screen bg-black p-20 lg:flex-row">
             <div data-aos="fade-right" className="m-10 self-center">
                 <div className="text-5xl text-seagreen font-bold font-spacegrotesk pt-20 text-center md:pt-0 px-10 ">
                     Let's Connect!
