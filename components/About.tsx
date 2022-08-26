@@ -8,7 +8,7 @@ const AboutMe = () => {
     Aos.init({duration: 1500});
   }, []);
   return (
-    <div className="flex flex-col my-48" id="about">
+    <div className="flex flex-col my-64" id="about">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
