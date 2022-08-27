@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import SkillsBanner from './SkillsBanner'
+import SkillsTitle from './SkillsTitle'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,13 +9,13 @@ const Skills = () => {
         Aos.init({duration: 1000});
       }, []);
   return (
-    <div className="flex flex-col h-auto bg-black p-20" id="skills">
+    <div className="flex flex-col h-auto bg-black" id="skills">
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Electrolize&family=Kanit:ital,wght@1,600;1,800;1,900&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
         </Head>
-        <SkillsBanner />
+        <SkillsTitle />
         <div className="self-center bg-black text-light font-kanit font-thin mt-36 lg:columns-3 xl:flex justify-between">
             {/* Frontend */}
             <div data-aos="fade-up" className="break-after-column flex justify-center bg-black w-72 md:mt-0 lg:my-5 mx-3">

@@ -39,6 +39,9 @@ module.exports = {
       },
       boxShadow: {
         'custom': '0 5px 20px -17px rgba(2, 255, 179)',
+      },
+      skew: {
+        '20': '20deg',
       }
     }
   },

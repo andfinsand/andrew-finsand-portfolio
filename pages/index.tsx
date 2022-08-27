@@ -12,10 +12,10 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col" id="home">
       <Navbar />
-      <div className="bg-bgImage bg-cover bg-fixed bg-center w-full">
+      <div className="bg-bgImage bg-cover bg-fixed bg-center w-full h-screen">
         <HomeTitle />
-        <About />
       </div>
+      <About />
       <ProjectCards />
       <Skills />
       <Contact />
