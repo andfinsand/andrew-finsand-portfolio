@@ -4,14 +4,14 @@ import 'aos/dist/aos.css';
 
 const AboutTest = () => {
   return (
-    <div className="flex flex-col bg-black py-36  px-20 lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
+    <div className="flex flex-col bg-black py-36 px-10 lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
         </Head>
         <div className="flex justify-center pb-16 lg:col-span-2 lg:order-last">
-          <img src="selfThumb.png" alt="Self Image" className="h-80 rounded-full lg:self-center lg:object-contain lg:h-80" />
+          <img src="selfThumb.png" alt="Self Image" className="h-72 rounded-full lg:self-center lg:object-contain lg:h-80" />
         </div>
         <div className="flex flex-col lg:col-span-3">
           <div className="text-4xl text-center text-white font-spacegrotesk font-bold mb-5">
