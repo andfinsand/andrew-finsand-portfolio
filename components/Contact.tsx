@@ -16,10 +16,10 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-center">
                     <div className="m-5">
-                        <a href="https://www.linkedin.com/in/andrewfinsand/" target="_blank"><img src = {"linkedinIcon.png"}></img></a>
+                        <a href="https://www.linkedin.com/in/andrewfinsand/" target="_blank"><img src = {"linkedinIcon.png"} alt="Image of LinkedIn icon" aria-label="open link to andrew's linkedin profile"></img></a>
                     </div>
                     <div className="m-5">
-                        <a href="https://github.com/andfinsand" target="_blank"><img src = {"githubIcon.png"}></img></a>
+                        <a href="https://github.com/andfinsand" target="_blank"><img src = {"githubIcon.png"} alt="Image of GitHub icon" aria-label="open link to andrew's github profile"></img></a>
                     </div>
                     <div className="m-5">
                         <img src = {"emailIcon.png"}></img>
