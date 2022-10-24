@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           <meta name="viewport" content="width=device-width" />
       </Head>
       <Navbar />
-      <div className="bg-bgImage bg-cover bg-fixed bg-center w-full h-screen">
+      <div className="bg-bgImage bg-cover bg-fixed bg-center w-full h-full">
         <HomeTitle />
       </div>
       <About />

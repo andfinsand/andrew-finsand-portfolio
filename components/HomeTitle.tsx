@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const HomeTitle = () => {
   return (
-    <div className="flex flex-col text-center mt-64 sm:ml-32 sm:text-left">
+    <div className="flex flex-col text-center mt-56 mb-28 sm:ml-32 sm:text-left">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
