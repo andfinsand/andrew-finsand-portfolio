@@ -37,6 +37,18 @@ const Skills = () => {
                         </p>
                     </div>
                     <div className="flex text-white mt-5 px-10">
+                        <img className="mx-4" src = {"bootstrapIcon.png"} alt="Image of Bootstrap icon"></img>
+                        <p className="self-center mx-2">
+                        BootstrapCSS
+                        </p>
+                    </div>
+                    <div className="flex text-white mt-5 px-10">
+                        <img className="mx-4" src = {"tailwindIcon.png"} alt="Image of Tailwind icon"></img>
+                        <p className="self-center mx-2">
+                        TailwindCSS
+                        </p>
+                    </div>
+                    <div className="flex text-white mt-5 px-10">
                         <img className="mx-4" src = {"javascriptIcon.png"} alt="Image of Javascript icon"></img>
                         <p className="self-center mx-2">
                         Javascript
@@ -52,24 +64,6 @@ const Skills = () => {
                         <img className="mx-4" src = {"reactIcon.png"} alt="Image of React icon"></img>
                         <p className="self-center mx-2">
                         React
-                        </p>
-                    </div>
-                    <div className="flex text-white mt-5 px-10">
-                        <img className="mx-4" src = {"nextjsIcon.png"} alt="Image of NextJS icon"></img>
-                        <p className="self-center mx-2">
-                        NextJS
-                        </p>
-                    </div>
-                    <div className="flex text-white mt-5 px-10">
-                        <img className="mx-4" src = {"bootstrapIcon.png"} alt="Image of Bootstrap icon"></img>
-                        <p className="self-center mx-2">
-                        Bootstrap
-                        </p>
-                    </div>
-                    <div className="flex text-white mt-5 px-10">
-                        <img className="mx-4" src = {"tailwindIcon.png"} alt="Image of Tailwind icon"></img>
-                        <p className="self-center mx-2">
-                        Tailwind
                         </p>
                     </div>
                 </div>
@@ -92,17 +86,6 @@ const Skills = () => {
                         <p className="self-center mx-2">
                         API
                         </p>
-                    </div>
-                    <div className="flex text-white mt-5 px-10">
-                        <img className="object-scale-down h-16" src = {"graphqlIcon.png"} alt="Image of GraphQL icon"></img>
-                        <div>
-                            <p className="self-center mx-2">
-                            GraphQL
-                            </p>
-                            <p className="self-center mx-2">
-                                (Learning)
-                            </p>
-                        </div>
                     </div>
                     <div className="flex text-white mt-5 px-10">
                         <img className="mx-4" src = {"flaskIcon.png"} alt="Image of Flask icon"></img>

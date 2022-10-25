@@ -23,13 +23,13 @@ const ProjectCards = () => {
                     <figure className="drop-shadow-customDark p-5">
                         <img src="tokenRecordsThumb.png" alt="Project Image" className="rounded-xl" />
                     </figure>
-                    <div className="card-body items-left text-left text-white">
-                        <h1 className="card-title font-kanit font-normal text-2xl">Token Records</h1>
-                        <p className="font-electrolize mt-2"> A full stack python application to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!</p>
-                        <div className="self-center font-bold my-6">Python <span className="font-normal text-seagreen">|</span> Flask <span className="font-normal text-seagreen">|</span> HTML5 <span className="font-normal text-seagreen">|</span> Bootstrap CSS <span className="font-normal text-seagreen">|</span> MySQL</div>
+                    <div className="card-body items-left text-left text-white font-kanit">
+                        <h1 className="card-title font-normal text-2xl">Token Records</h1>
+                        <p className="font-light mt-2"> A full stack python application to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!</p>
+                        <div className="self-center my-6">Python <span className="font-normal text-seagreen">|</span> Flask <span className="font-normal text-seagreen">|</span> HTML5 <span className="font-normal text-seagreen">|</span> Bootstrap CSS <span className="font-normal text-seagreen">|</span> MySQL</div>
                         <div className="card-actions justify-around my-2">
-                        <a href="http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com" target="_blank"><button className="btn btn-primary w-20 text-dark font-bold bg-seagreen border-seagreen drop-shadow-customLight hover:bg-dark hover:text-seagreen hover:border-seagreen">Live</button></a>
-                            <a href="https://github.com/andfinsand/token-records" target="_blank"><button className="btn btn-primary w-20 text-dark font-bold bg-seagreen border-seagreen drop-shadow-customLight hover:bg-dark hover:text-seagreen hover:border-seagreen">Github</button></a>
+                        <a href="http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com" target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 hover:bg-seagreen hover:text-dark hover:border-seagreen">Live</button></a>
+                            <a href="https://github.com/andfinsand/token-records" target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 hover:bg-seagreen hover:text-dark hover:border-seagreen">Github</button></a>
                         </div>
                     </div>
                 </div>
@@ -38,13 +38,13 @@ const ProjectCards = () => {
                     <figure className="drop-shadow-customDark p-5">
                         <img src="coolGymHwy49Thumb.PNG" alt="Project Image" className="rounded-xl" />
                     </figure>
-                    <div className="card-body items-left text-left text-white">
-                        <h1 className="card-title font-kanit font-normal text-2xl">Cool Gym Hwy49</h1>
-                        <p className="font-electrolize mt-2"> Website for family owned business, Cool Gym, located in Cool California. Sign up for a membership, check out the facilities, and view upcoming classes on the monthly calendar!</p>
-                        <div className="self-center font-bold my-6">React <span className="font-normal text-seagreen">|</span> NextJS <span className="font-normal text-seagreen">|</span> Typescript <span className="font-normal text-seagreen">|</span> Tailwind CSS <span className="font-normal text-seagreen">|</span> GraphQL</div>
+                    <div className="card-body items-left text-left text-white font-kanit">
+                        <h1 className="card-title font-normal text-2xl">Cool Gym Hwy49</h1>
+                        <p className="font-light mt-2"> Website for family owned business, Cool Gym, located in Cool California. Sign up for a membership, check out the facilities, and view upcoming classes on the monthly calendar!</p>
+                        <div className="self-center my-6">React <span className="font-normal text-seagreen">|</span> NextJS <span className="font-normal text-seagreen">|</span> Typescript <span className="font-normal text-seagreen">|</span> Tailwind CSS <span className="font-normal text-seagreen">|</span> GraphQL</div>
                         <div className="card-actions justify-around my-2">
-                            <a href="https://coolgymhwy49.netlify.app/" target="_blank"><button className="btn btn-primary w-20 text-dark font-bold bg-seagreen border-seagreen drop-shadow-customLight hover:bg-dark hover:text-seagreen hover:border-seagreen">Live</button></a>
-                            <a href="https://github.com/CoolGymHwy49/cool-gym-hwy-49" target="_blank"><button className="btn btn-primary w-20 text-dark font-bold bg-seagreen border-seagreen drop-shadow-customLight hover:bg-dark hover:text-seagreen hover:border-seagreen">Github</button></a>
+                            <a href="https://coolgymhwy49.netlify.app/" target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 hover:bg-seagreen hover:text-dark hover:border-seagreen">Live</button></a>
+                            <a href="https://github.com/CoolGymHwy49/cool-gym-hwy-49" target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 hover:bg-seagreen hover:text-dark hover:border-seagreen">Github</button></a>
                         </div>
                     </div>
                 </div>

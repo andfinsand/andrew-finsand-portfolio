@@ -65,7 +65,7 @@ const Contact = () => {
                         ></textarea>
                     </div>
                     <div className="flex self-center md:self-end">
-                        <button className="btn w-36 btn-secondary text-dark font-bold bg-seagreen rounded-full border-seagreen hover:bg-dark hover:text-seagreen hover:border-seagreen">
+                        <button className="btn btn-secondary w-36 text-seagreen font-bold bg-transparent border-seagreen rounded-[0px] px-6 hover:bg-seagreen hover:text-dark hover:border-seagreen">
                         Send
                         </button>
                     </div>
