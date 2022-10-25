@@ -15,7 +15,7 @@ const HomeTitle = () => {
       <div className="text-center text-4xl font-bakbakone text-seagreen m-5">
           <p>Andrew Finsand</p>
       </div>
-      <div className="mt-20">
+      <div className="mt-16">
         <div className="flex justify-center my-5">
           <a data-scroll="projects" href="#projects" className="btn btn-secondary w-48 text-seagreen font-bold bg-transparent border-seagreen rounded-[0px] hover:bg-seagreen hover:text-dark hover:border-seagreen">My Work</a>
         </div>
