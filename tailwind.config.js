@@ -28,10 +28,6 @@ module.exports = {
         'spacegrotesk': ['Space Grotesk', 'sans-serif'],
         'kanit': ['Kanit', 'sans-serif'],
       },
-      backgroundImage: {
-        'bgImage': "url('/blackWaves.jpg')",
-        'bgImageSmall': "url('/blackWavesSmall.png')",
-      },
       dropShadow: {
         'custom': '0px 3px 3px rgba(0, 0, 0, .25)',
         'customLight': '0px 4px 3px rgba(0, 0, 0, .55)',
