@@ -12,6 +12,16 @@ body {
   scroll-behavior: smooth;
 }
 
+#background {
+  z-index: -1;
+  background-image: url('/blackWaves.jpg');
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .wideParent {
   width: 900px;
 }
