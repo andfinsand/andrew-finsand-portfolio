@@ -50,6 +50,8 @@ const ProjectCards = () => {
                 </div>
             </div>
         </div>
+        <div className="text-center text-lg bg-black text-light font-bold"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
+        <div className="spacer bg-black h-10"></div>
     </div>
   )
 }
