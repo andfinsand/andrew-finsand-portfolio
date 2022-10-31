@@ -5,8 +5,6 @@ import Navbar from '../components/Navbar'
 import HomeTitle from '../components/HomeTitle'
 import About from '../components/About'
 import ProjectCards from '../components/ProjectCards'
-import Skills from '../components/Skills'
-import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
@@ -25,8 +23,6 @@ const Home: NextPage = () => {
       <HomeTitle />
       <About />
       <ProjectCards />
-      <Skills />
-      <Contact />
       <Footer />
     </div>
   )
