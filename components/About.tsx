@@ -31,10 +31,10 @@ const AboutTest = () => {
         </div>
         <div className = "flex flex-col">
           <div className="text-white text-xl font-kanit font-light my-4 lg:m-5 lg:px-5 2xl:px-10 self-center">
-          I'm a software developer located in San Jose California, and I love to build. Whether it's classic trucks, gundam models, or full stack python and web apps, you'll find me buckled down and grinding until the job is done.
+          I'm a software developer located in San Jose California, and I love to build. If I'm not working on my 1980 F100, or airbrushing highly-detailed scale gundam models, you'll find me buckled down building full stack python web apps.
           </div>
           <div className="text-white text-xl font-kanit font-light my-4 lg:m-5 lg:px-5 2xl:px-10 self-center">
-          With a diverse background, from the medical field to art, my innate desire to learn allows me to continually broaden and elevate my skills. My long term goal is to become a blockchain developer in Rust or Solidity. Until then...let's build together!
+          Previously working in the medical field and biotech, I graduated from a coding bootcamp, and have since continued to be a self-taught developer. My long term goals are Web 3 development and machine learning. Until then...let's build together!
           </div>
         </div>
         <div className="flex flex-col mt-12 mb-10 px-28">
