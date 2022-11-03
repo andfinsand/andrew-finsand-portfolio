@@ -42,7 +42,6 @@ const AboutTest = () => {
             <img className="mx-2" src = {"pythonIcon.png"} alt="Image of Python icon"></img>
             <img className="mx-2" src = {"djangoIcon.png"} alt="Image of Django icon"></img>
             <img className="mx-2" src = {"flaskIcon.png"} alt="Image of Flask icon"></img>
-            <img className="mx-2" src = {"apiIcon.png"} alt="Image of API icon"></img>
             <img className="mx-2" src = {"mysqlIcon.png"} alt="Image of MySQL icon"></img>
             <img className="mx-2" src = {"gitIcon.png"} alt="Image of Git icon"></img>
             <img className="mx-2" src = {"figmaIcon.png"} alt="Image of Figma icon"></img>
@@ -53,7 +52,6 @@ const AboutTest = () => {
             <img className="mx-2" src = {"bootstrapIcon.png"} alt="Image of Bootstrap icon"></img>
             <img className="mx-2" src = {"tailwindIcon.png"} alt="Image of Tailwind icon"></img>
             <img className="mx-2" src = {"javascriptIcon.png"} alt="Image of Javascript icon"></img>
-            <img className="mx-2" src = {"typescriptIcon.png"} alt="Image of Typescript icon"></img>
             <img className="mx-2" src = {"reactIcon.png"} alt="Image of React icon"></img>
           </div>
         </div>
