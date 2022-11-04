@@ -13,7 +13,7 @@ const ProjectCards = () => {
             number: 1,
             name: "Token Records",
             description: " A full stack python application to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
-            stack: ["Python | Flask | HTML5 | Bootstrap CSS | MySQL"],
+            stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "Bootstrap CSS" , "|" , "MySQL"],
             live: "http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com",
             github: "https://github.com/andfinsand/token-records",
             image: "tokenRecordsThumb.png",
@@ -22,7 +22,7 @@ const ProjectCards = () => {
             number: 2,
             name: "Apefolio",
             description: "A full stack python application to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentage. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
-            stack: ["Python | Django | HTML5 | Tailwind CSS | SQLite"],
+            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "SQLite"],
             // live: "#",
             github: "https://github.com/colord/crypto-portfolio",
             image: "apefolioThumb.PNG",
@@ -31,7 +31,7 @@ const ProjectCards = () => {
             number: 3,
             name: "Cool Gym Hwy49",
             description: " Website for a family owned business, Cool Gym, located in Cool California. Sign up for a membership, check out the facilities, and view upcoming classes on the monthly calendar.",
-            stack: ["React | NextJS | Typescript | Tailwind CSS | GraphQL"],
+            stack: ["React" , "|" , "NextJS" , "|" , "Typescript" , "|" , "Tailwind CSS" , "|" , "GraphQL"],
             live: "https://coolgymhwy49.netlify.app/",
             github: "https://github.com/CoolGymHwy49/cool-gym-hwy-49",
             image: "coolGymHwy49Thumb.PNG",
@@ -59,8 +59,14 @@ const ProjectCards = () => {
                             <div className="card-body self-center items-left text-left text-white font-kanit lg:w-2/5">
                                 <h1 className="card-title font-normal text-4xl">{project.name}</h1>
                                 <p className="self-center font-light text-lg mt-5">{project.description}</p>
-                                {/* <div className="self-center my-6">Python <span className="font-normal text-seagreen">|</span> Flask <span className="font-normal text-seagreen">|</span> HTML5 <span className="font-normal text-seagreen">|</span> Bootstrap CSS <span className="font-normal text-seagreen">|</span> MySQL</div> */}
-                                <div className="self-center my-6">{project.stack}</div>
+                                <div className="flex self-center my-6">  {project.stack.map(language => {
+                                    if(language == "|") {
+                                        return <div className="text-seagreen">&nbsp;{language}&nbsp;</div>
+                                    } else {
+                                        return <div>{language}</div>
+                                    }
+                                })}
+                                </div>
                                 <div className="card-actions justify-around">
                                     <a href={project.live} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Live</button></a>
                                     <a href={project.github} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Github</button></a>

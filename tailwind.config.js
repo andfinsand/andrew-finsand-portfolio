@@ -17,7 +17,6 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'electrolize': ['Electrolize', 'sans-serif'],
         'bakbakone': ['Bakbak One', 'sans-serif'],
         'play': ['Play', 'sans-serif'],
         'spacegrotesk': ['Space Grotesk', 'sans-serif'],

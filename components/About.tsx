@@ -15,13 +15,19 @@ const AboutTest = () => {
         </div>
         <div className="flex justify-center pb-10">
             <div className="m-5">
-                <a href="https://www.linkedin.com/in/andrewfinsand/" target="_blank"><img src = {"linkedinIcon.png"} alt="Image of LinkedIn icon" aria-label="open link to andrew's linkedin profile"></img></a>
+                <a href="https://www.linkedin.com/in/andrewfinsand/" target="_blank">
+                  <img src = {"linkedinIcon.png"} alt="Image of LinkedIn icon" aria-label="open link to andrew's linkedin profile"></img>
+                </a>
             </div>
             <div className="m-5">
-                <a href="https://github.com/andfinsand" target="_blank"><img src = {"githubIcon.png"} alt="Image of GitHub icon" aria-label="open link to andrew's github profile"></img></a>
+                <a href="https://github.com/andfinsand" target="_blank">
+                  <img src = {"githubIcon.png"} alt="Image of GitHub icon" aria-label="open link to andrew's github profile"></img>
+                </a>
             </div>
             <div className="m-5">
-              <a href="mailto:andfinsand@gmail.com"><img src = {"emailIcon.png"} alt="Image of Email icon" aria-label="open email provider"></img></a>
+              <a href="mailto:andfinsand@gmail.com">
+                <img src = {"emailIcon.png"} alt="Image of Email icon" aria-label="open email provider"></img>
+              </a>
             </div>
         </div>
       </div>
