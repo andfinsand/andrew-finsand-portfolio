@@ -14,7 +14,7 @@ const ProjectCards = () => {
             name: "Token Records",
             description: " A full stack python application to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
             stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "Bootstrap CSS" , "|" , "MySQL"],
-            live: "http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com",
+            live: ["http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com"],
             github: "https://github.com/andfinsand/token-records",
             image: "tokenRecordsThumb.png",
         },
@@ -23,7 +23,7 @@ const ProjectCards = () => {
             name: "Apefolio",
             description: "A full stack python application to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentage. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "SQLite"],
-            // live: "#",
+            live: ["0"],
             github: "https://github.com/colord/crypto-portfolio",
             image: "apefolioThumb.PNG",
         },
@@ -32,7 +32,7 @@ const ProjectCards = () => {
             name: "Cool Gym Hwy49",
             description: " Website for a family owned business, Cool Gym, located in Cool California. Sign up for a membership, check out the facilities, and view upcoming classes on the monthly calendar.",
             stack: ["React" , "|" , "NextJS" , "|" , "Typescript" , "|" , "Tailwind CSS" , "|" , "GraphQL"],
-            live: "https://coolgymhwy49.netlify.app/",
+            live: ["https://coolgymhwy49.netlify.app/"],
             github: "https://github.com/CoolGymHwy49/cool-gym-hwy-49",
             image: "coolGymHwy49Thumb.PNG",
         },
@@ -68,7 +68,13 @@ const ProjectCards = () => {
                                 })}
                                 </div>
                                 <div className="card-actions justify-around">
-                                    <a href={project.live} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Live</button></a>
+                                    {project.live.map(link => {
+                                        if(link == "0") {
+                                            return <div className="self-center text-light">Coming Soon</div>
+                                        } else {
+                                            return <a href={link} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Live</button></a>
+                                        }
+                                    })}
                                     <a href={project.github} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Github</button></a>
                                 </div>
                             </div>
