@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 
 const AboutTest = () => {
   return (
-    <div className="flex flex-col bg-black py-36 px-10 lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
+    <div className="flex flex-col bg-gradient-to-b from-black to-[#101010] py-36 px-10 lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" />

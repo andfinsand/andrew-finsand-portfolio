@@ -12,8 +12,8 @@ const ProjectCards = () => {
         {
             number: 1,
             name: "Futurecap",
-            description: "Entry for the Evmos-Covalent #OneMillionWallets Hackathon. A full stack Django web app utilizing the Covalent Unified API for the Evmos blockchain serving the Cosmos ecosystem. Calculate the price of Token A, if it had the market cap of Token B. Only tokens available from diffusion.fi.",
-            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "Rest API"],
+            description: "Entry for the Evmos-Covalent #OneMillionWallets Hackathon. A full stack Django web app utilizing the Covalent Unified API for the Evmos blockchain serving the Cosmos ecosystem. Predict the price of Token A, if it had the market cap of Token B. Only tokens available from Diffusion Finance.",
+            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "REST API"],
             live: ["https://futurecap.up.railway.app/"],
             github: "https://github.com/dna-projects/market-cap-transform",
             image: "futurecapThumb.png",
@@ -21,7 +21,7 @@ const ProjectCards = () => {
         {
             number: 2,
             name: "Apefolio",
-            description: "A full stack Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentage. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
+            description: "A full stack Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "SQLite"],
             live: ["0"],
             github: "https://github.com/colord/crypto-portfolio",
@@ -53,17 +53,17 @@ const ProjectCards = () => {
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
         </Head>
-        <div className="flex flex-col bg-black pb-36 px-10 sm:px-20">
+        <div className="flex flex-col bg-[#101010] pb-36 px-10 sm:px-20">
         <ProjectsTitle />
             <div className="flex flex-col mt-32 lg:flex">
                 {projects.map(project =>
                     <div key={project.number} className="flex justify-center">
-                        <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-tr-3xl rounded-bl-3xl rounded-tl-none rounded-br-none my-8 lg:flex-row lg:w-5/6">
+                        <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-none my-8 lg:flex-row lg:w-5/6">
                             <figure className="drop-shadow-customDark p-7 lg:w-3/5">
                                 <img
                                     src={project.image}
                                     alt="Project Image"
-                                    className="rounded-xl" />
+                                    className="rounded-2xl" />
                             </figure>
                             <div className="card-body self-center items-left text-left text-white font-kanit lg:w-2/5">
                                 <h1 className="card-title font-normal text-4xl">{project.name}</h1>
@@ -92,8 +92,8 @@ const ProjectCards = () => {
                 )}
             </div>
         </div>
-        <div className="text-center text-lg bg-black text-light font-bold"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
-        <div className="spacer bg-black h-10"></div>
+        <div className="text-center text-lg bg-[#101010] text-light font-bold"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
+        <div className="spacer bg-[#101010] h-10"></div>
     </div>
   )
 }

@@ -11,12 +11,15 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col" id="home">
       <Head>
+        <title>
+          Andrew Finsand Portfolio - Full Stack Python Developer | Django | Flask | React | MySQL
+        </title>
         <meta
-            name="keywords"
-            content="Andrew Finsand, Full Stack Python Developer, portfolio"
-          />
-          <meta name="description" content="Andrew Finsand, Full Stack Python Developer" />
-          <meta name="viewport" content="width=device-width" />
+          name="keywords"
+          content="Andrew Finsand, Full Stack Developer, Portfolio, Python, Django, Flask, React, MySQL, Javascript, HTML5, CSS3, Python, Django, Flask, React, web development, APIs, Figma" />
+        <meta
+          name="viewport"
+          content="width=device-width" />
       </Head>
       <Navbar />
       <div id="background"></div>
