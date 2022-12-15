@@ -58,7 +58,7 @@ const ProjectCards = () => {
             <div className="flex flex-col mt-32 lg:flex">
                 {projects.map(project =>
                     <div key={project.number} className="flex justify-center">
-                        <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-none my-8 lg:flex-row lg:w-5/6">
+                        <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-md my-8 lg:flex-row lg:w-5/6">
                             <figure className="drop-shadow-customDark p-7 lg:w-3/5">
                                 <img
                                     src={project.image}
