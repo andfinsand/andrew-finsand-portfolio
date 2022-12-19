@@ -1,4 +1,4 @@
-# Personal project portfolio
+# Project portfolio website
 
 [andrewfinsand.dev](https://www.andrewfinsand.dev/)
 
