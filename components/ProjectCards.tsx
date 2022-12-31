@@ -59,13 +59,13 @@ const ProjectCards = () => {
                 {projects.map(project =>
                     <div key={project.number} className="flex justify-center">
                         <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-2xl my-8 lg:flex-row lg:w-5/6">
-                            <figure className="drop-shadow-customDark p-5 pb-0 lg:w-3/5 lg:p-7">
+                            <figure className="drop-shadow-customDark p-5 lg:w-3/5 lg:p-7">
                                 <img
                                     src={project.image}
                                     alt="Project Image"
                                     className="rounded-2xl" />
                             </figure>
-                            <div className="card-body self-center items-left text-left text-white font-kanit lg:w-2/5">
+                            <div className="card-body self-center items-left text-left text-white font-kanit pt-2 lg:w-2/5 lg:pt-8">
                                 <h1 className="card-title font-normal text-4xl">{project.name}</h1>
                                 <p className="self-center font-light text-lg mt-5">{project.description}</p>
                                 <div className="flex self-center my-6">  {project.stack.map(language => {
