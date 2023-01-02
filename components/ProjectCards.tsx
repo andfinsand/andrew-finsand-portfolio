@@ -55,7 +55,7 @@ const ProjectCards = () => {
         </Head>
         <div className="flex flex-col bg-[#101010] pb-36 px-10 sm:px-20">
         <ProjectsTitle />
-            <div className="flex flex-col mt-32 lg:flex">
+            <div className="flex flex-col self-center mt-32 max-w-[1920px] lg:flex">
                 {projects.map(project =>
                     <div key={project.number} className="flex justify-center">
                         <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-2xl my-8 lg:flex-row lg:w-5/6">
