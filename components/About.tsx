@@ -32,16 +32,14 @@ const AboutTest = () => {
         </div>
       </div>
       <div className="flex flex-col lg:col-span-3">
-        <div className="text-4xl text-center text-white font-spacegrotesk font-bold mb-5">
-          <p>Hello, I'm <span className="text-seagreen">Andrew</span>.</p>
+        <div className="text-4xl text-center text-white font-kanit font-semi mb-5">
+          <p>Welcome to my <span className="text-seagreen">portfolio</span>!</p>
         </div>
         <div className = "flex flex-col">
           <div className="text-white text-xl font-kanit font-light my-4 lg:m-5 lg:px-5 2xl:px-10 self-center">
-          I'm a software developer located in San Jose California, and I love to build. If I'm not working on my 1980 F100, or airbrushing highly-detailed scale gundam models, you'll find me buckled down building full stack python web apps.
-          </div>
+          I am Andrew Finsand, a full stack python developer with a passion for creating intuitive and user-friendly web applications using the Django framework. With a strong foundation in languages such as Python, HTML, and CSS, I am well-equipped to tackle a variety of development projects. In addition to my technical skills, I have a keen eye for design and enjoy using Figma to bring my ideas to life.          </div>
           <div className="text-white text-xl font-kanit font-light my-4 lg:m-5 lg:px-5 2xl:px-10 self-center">
-          Previously working in the medical field and biotech, I graduated from a coding bootcamp, and have since continued to be a self-taught developer. My long term goals are Web 3 development and machine learning. Until then...let's build together!
-          </div>
+          My passion for web development extends beyond just coding - I am also interested in exploring the exciting world of web3 and artificial intelligence. Thank you for visiting my site and I hope you enjoy exploring my work.          </div>
         </div>
         <div className="flex flex-col mt-12 mb-10 px-28">
           <div className="flex justify-around mb-10">
