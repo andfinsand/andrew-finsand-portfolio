@@ -32,7 +32,7 @@ const ProjectCards = () => {
             name: "Apefolio",
             description: "A full stack Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "SQLite"],
-            live: ["0"],
+            live: ["1", "https://www.youtube.com/watch?v=cQ7iAzpAaRA"],
             github: "https://github.com/colord/crypto-portfolio",
             image: "apefolioThumb.PNG",
         },
@@ -68,17 +68,21 @@ const ProjectCards = () => {
                 <div className="flex flex-col self-center mt-32 max-w-[1920px] lg:flex">
                     {projects.map(project =>
                         <div key={project.number} className="flex justify-center">
-                            <div data-aos="fade-right" className="greyGradient card h-max shadow-xl rounded-2xl my-8 lg:flex-row lg:w-5/6">
+                            <div
+                                data-aos="fade-right"
+                                className="greyGradient card h-max shadow-xl rounded-2xl my-8 lg:flex-row lg:w-5/6"
+                            >
                                 <figure className="drop-shadow-customDark p-5 lg:w-3/5 lg:p-7">
                                     <img
                                         src={project.image}
                                         alt="Project Image"
-                                        className="rounded-2xl" />
+                                        className="rounded-2xl"
+                                    />
                                 </figure>
                                 <div className="card-body self-center items-left text-left text-white font-kanit pt-2 lg:w-2/5 lg:pt-8">
                                     <h1 className="card-title font-normal text-4xl">{project.name}</h1>
                                     <p className="self-center font-light text-lg mt-5">{project.description}</p>
-                                    <div className="flex self-center my-6">  {project.stack.map(language => {
+                                    <div className="flex self-center my-6"> {project.stack.map(language => {
                                         if(language == "|") {
                                             return <div className="text-seagreen">&nbsp;{language}&nbsp;</div>
                                         } else {
@@ -86,12 +90,34 @@ const ProjectCards = () => {
                                         }
                                     })}
                                     </div>
+
+                                    {/* Buttons for live, demo, and repository links */}
                                     <div className="card-actions justify-around">
-                                        {project.live.map(link => {
-                                            if(link == "0") {
-                                                return <div className="self-center text-light">Coming Soon</div>
+                                        {project.live.map((link, index) => {
+                                            if (link === "0") {
+                                                return (
+                                                    <div className="self-center text-light" key={index}>
+                                                    Coming Soon
+                                                    </div>
+                                                );
+                                            } else if (link === "1") {
+                                                return (
+                                                    <a href={project.live[1]} target="_blank" key={index}>
+                                                    <button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">
+                                                        Demo
+                                                    </button>
+                                                    </a>
+                                                );
+                                            } else if (index === 1 && project.live[0] === "1") {
+                                                return null; // Don't render "Live" if "Demo" is showing
                                             } else {
-                                                return <a href={link} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Live</button></a>
+                                                return (
+                                                    <a href={link} target="_blank" key={index}>
+                                                    <button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">
+                                                        Live
+                                                    </button>
+                                                    </a>
+                                                );
                                             }
                                         })}
                                         <a href={project.github} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Github</button></a>
