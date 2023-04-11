@@ -14,7 +14,7 @@ const ProjectCards = () => {
             name: "Gradient Wizard",
             description: "A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen.",
             stack: ["React" , "|" , "Django" , "|" , "Docker" , "|" , "Tailwind CSS" , "|" , "OpenAI API"],
-            live: ["https://gradient-wizard.up.railway.app/"],
+            live: ["https://gradientwizard.io/"],
             github: "https://github.com/andfinsand/gradient-wizard",
             image: "gradientwizardThumb.PNG",
         },

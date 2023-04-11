@@ -37,9 +37,9 @@ const AboutTest = () => {
         </div>
         <div className = "flex flex-col">
           <div className="text-white text-xl font-kanit font-light my-4 lg:m-5 lg:px-5 2xl:px-10 self-center">
-          I'm Andrew, a full stack python developer with a passion for creating intuitive and user-friendly web applications using the Django framework. With a strong foundation in languages such as Python, HTML, and CSS, I am well-equipped to tackle a variety of development projects. In addition to my technical skills, I have a keen eye for design and enjoy using Figma to bring my ideas to life.</div>
+          I'm Andrew, a full stack python developer with a passion for creating intuitive and user-friendly web applications using the Django framework. With a strong foundation in languages such as Python, HTML, and CSS, I am well-equipped to tackle a variety of development projects. I also have a keen eye for design and enjoy using Figma to bring my ideas to life.</div>
           <div className="text-white text-xl font-kanit font-light my-4 lg:m-5 lg:px-5 2xl:px-10 self-center">
-          My passion for programming extends beyond web development - I am also interested in exploring the exciting world of web3 and machine learning. Thank you for visiting my site and I hope you enjoy exploring my work.</div>
+          My passion for programming extends beyond web development - I am also interested in exploring the exciting world of web3 and machine learning.</div>
         </div>
         <div className="flex flex-col mt-12 mb-10 px-28">
           <div className="flex justify-around mb-10">
