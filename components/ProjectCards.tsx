@@ -21,7 +21,7 @@ const ProjectCards = () => {
         {
             number: 2,
             name: "Futurecap",
-            description: "Entry for the Evmos-Covalent #OneMillionWallets Hackathon. A full stack Django web app utilizing the Covalent Unified API for the Evmos blockchain serving the Cosmos ecosystem. Predict the price of Token A, if it had the market cap of Token B. Only tokens available from Diffusion Finance.",
+            description: "Entry for the Evmos-Covalent #OneMillionWallets Hackathon. A Django web app utilizing the Covalent Unified API for the Evmos blockchain serving the Cosmos ecosystem. Predict the price of Token A, if it had the market cap of Token B. Only tokens available from Diffusion Finance.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "REST API"],
             live: ["https://futurecap.up.railway.app/"],
             github: "https://github.com/dna-projects/market-cap-transform",
@@ -30,7 +30,7 @@ const ProjectCards = () => {
         {
             number: 3,
             name: "Apefolio",
-            description: "A full stack Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
+            description: "A Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "SQLite"],
             live: ["1", "https://www.youtube.com/watch?v=cQ7iAzpAaRA"],
             github: "https://github.com/colord/crypto-portfolio",
@@ -39,7 +39,7 @@ const ProjectCards = () => {
         {
             number: 4,
             name: "Token Records",
-            description: "A full stack Flask web app to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
+            description: "A Flask web app to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
             stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "Bootstrap CSS" , "|" , "MySQL"],
             live: ["http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com"],
             github: "https://github.com/andfinsand/token-records",
@@ -58,31 +58,37 @@ const ProjectCards = () => {
 
     return (
         <div id="projects">
-            <Head>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
-            </Head>
-            <div className="flex flex-col bg-[#101010] pb-36 px-10 sm:px-20">
+            <div className="flex flex-col pb-36 px-10 sm:px-20">
             <ProjectsTitle />
-                <div className="flex flex-col self-center mt-32 max-w-[1920px] lg:flex">
+
+                {/* Project cards */}
+                <div className="flex flex-col self-center mt-36 max-w-[350px] sm:max-w-[700px] lg:flex lg:min-w-[1100px] lg:max-w-[1285px]">
                     {projects.map(project =>
                         <div key={project.number} className="flex justify-center">
                             <div
-                                data-aos="fade-right"
-                                className="greyGradient card h-max shadow-xl rounded-2xl my-8 lg:flex-row lg:w-5/6"
+                                data-aos="fade-up"
+                                data-aos-once="true"
+                                className="card backdrop-blur-xl bg-projectblue bg-opacity-20 shadow-xl border-2 border-blue border-opacity-20 rounded h-max my-8 p-6 lg:flex-row lg:w-5/6"
                             >
-                                <figure className="drop-shadow-customDark p-5 lg:w-3/5 lg:p-7">
+
+                                {/* Project image */}
+                                <figure className="drop-shadow-customDark lg:w-[530px] lg:pl-2">
                                     <img
                                         src={project.image}
                                         alt="Project Image"
-                                        className="rounded-2xl"
+                                        className="rounded"
                                     />
                                 </figure>
-                                <div className="card-body self-center items-left text-left text-white font-kanit pt-2 lg:w-2/5 lg:pt-8">
-                                    <h1 className="card-title font-normal text-4xl">{project.name}</h1>
-                                    <p className="self-center font-light text-lg mt-5">{project.description}</p>
-                                    <div className="flex self-center my-6"> {project.stack.map(language => {
+                                <div className="card-body self-center items-left text-left text-lightblue px-1 pb-2 sm:px-2 lg:w-1/2 lg:py-1 lg:pr-0 lg:pl-12">
+
+                                    {/* Project title */}
+                                    <h1 className="card-title self-center tracking-wide text-2xl font-semibold sm:self-start">{project.name}</h1>
+
+                                    {/* Project description */}
+                                    <p className="self-center text-sm font-normal mt-3">{project.description}</p>
+
+                                    {/* Technologies used */}
+                                    <div className="flex self-center text-xs font-medium mt-4 mb-5 sm:text-sm"> {project.stack.map(language => {
                                         if(language == "|") {
                                             return <div className="text-seagreen">&nbsp;{language}&nbsp;</div>
                                         } else {
@@ -92,20 +98,20 @@ const ProjectCards = () => {
                                     </div>
 
                                     {/* Buttons for live, demo, and repository links */}
-                                    <div className="card-actions justify-around">
+                                    <div className="card-actions justify-around sm:mx-16 lg:mx-0">
                                         {project.live.map((link, index) => {
                                             if (link === "0") {
                                                 return (
                                                     <div className="self-center text-light" key={index}>
-                                                    Coming Soon
+                                                        Coming Soon
                                                     </div>
                                                 );
                                             } else if (link === "1") {
                                                 return (
                                                     <a href={project.live[1]} target="_blank" key={index}>
-                                                    <button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">
-                                                        Demo
-                                                    </button>
+                                                        <button className="w-20 h-10 tracking-wider text-xs text-dark font-bold bg-seagreen border border-seagreen rounded-sm buttonHoverTransparent hover:text-seagreen hover:font-medium">
+                                                            Demo
+                                                        </button>
                                                     </a>
                                                 );
                                             } else if (index === 1 && project.live[0] === "1") {
@@ -113,14 +119,14 @@ const ProjectCards = () => {
                                             } else {
                                                 return (
                                                     <a href={link} target="_blank" key={index}>
-                                                    <button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">
-                                                        Live
-                                                    </button>
+                                                        <button className="w-20 h-10 tracking-wider text-xs text-dark font-bold bg-seagreen border border-seagreen rounded-sm buttonHoverTransparent hover:text-seagreen hover:font-medium">
+                                                            Live
+                                                        </button>
                                                     </a>
                                                 );
                                             }
                                         })}
-                                        <a href={project.github} target="_blank"><button className="btn btn-secondary w-24 text-seagreen font-medium bg-transparent border-seagreen rounded-[0px] px-6 buttonHover hover:bg-transparent hover:text-dark hover:border-seagreen">Github</button></a>
+                                        <a href={project.github} target="_blank"><button className="w-20 h-10 tracking-wider text-xs text-seagreen font-medium bg-transparent border border-seagreen rounded-sm buttonHoverSeagreen hover:text-dark">Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -128,8 +134,10 @@ const ProjectCards = () => {
                     )}
                 </div>
             </div>
-            <div className="text-center text-lg bg-[#101010] text-light font-bold"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
-            <div className="spacer bg-[#101010] h-10"></div>
+
+            {/* Back to top */}
+            <div className="text-center text-md text-blue font-semibold"><a data-scroll="home" href="/#home"><span className="hover:text-seagreen">BACK TO TOP</span></a></div>
+            <div className="spacer h-5"></div>
         </div>
     )
 }

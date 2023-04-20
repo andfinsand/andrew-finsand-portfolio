@@ -8,24 +8,24 @@ module.exports = {
     colors: {
       white: '#ffffff',
       black: '#000000',
+      blue: '#BED3EF',
+      lightblue: '#E4F2FF',
+      navblue: '#000B1A',
+      projectblue: "#9BB1FF",
       light: '#707080',
-      medium: '#282A35',
-      darkdark: '#202020',
       dark: '#1C1D25',
-      slate: '#94b8a3',
       seagreen: '#02FFB3',
     },
     extend: {
       fontFamily: {
-        'bakbakone': ['Bakbak One', 'sans-serif'],
-        'play': ['Play', 'sans-serif'],
-        'spacegrotesk': ['Space Grotesk', 'sans-serif'],
         'kanit': ['Kanit', 'sans-serif'],
+        'lato' : ['Lato', 'sans-serif'],
+        'roboto' : ['Roboto', 'sans-serif'],
       },
       dropShadow: {
         'custom': '0px 3px 3px rgba(0, 0, 0, .25)',
         'customLight': '0px 4px 3px rgba(0, 0, 0, .55)',
-        'customDark': '3px 5px 2px rgba(0, 0, 0, .55)',
+        'customDark': '4px 4px 4px rgba(0, 0, 0, .5)',
         'customBanner': '0px 5px 2px rgba(0, 0, 0, .55)',
       },
       boxShadow: {
