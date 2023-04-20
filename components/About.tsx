@@ -41,7 +41,7 @@ const About = () => {
         </div>
         <div className = "flex flex-col">
           <div className="text-lightblue text-sm my-4 sm:px-20 lg:mx-5 lg:mb-3 lg:px-1 xl:px-5 self-center">
-            Hi, I'm Andrew - a creative and driven full-stack software developer with a passion for crafting user-friendly web applications. I specialize in Python, Django, and React for web development while also utilizing Figma to bring my ideas and designs to life.
+            Hi, I'm Andrew - a creative and driven full-stack software developer with a passion for crafting user-friendly web applications. I specialize in Python, Django, React, and Tailwind CSS for web development, as well as design with Figma to bring my ideas and concepts to life.
           </div>
           <div className="text-lightblue text-sm my-4 sm:px-20 lg:mx-5 lg:my-3 lg:px-1 xl:px-5 self-center">
             I have experience in utilizing various APIs, such as OpenAI, to create visually appealing and engaging projects like Gradient Wizard, a web app that generates two or three-tone gradients based on user input. I have developed a passion for exploring the possibilities of artificial intelligence and machine learning, and my long-term goal is to expand my understanding of this field and its applications. I am also eager to explore the exciting world of web3 and learn how these new technologies can be used to create sophisticated and secure applications. I am enthusiastic about the opportunity to collaborate with like-minded professionals towards a shared goal of creating cutting-edge solutions.
