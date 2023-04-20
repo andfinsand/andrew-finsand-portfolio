@@ -14,7 +14,7 @@ body {
 
 #background {
   z-index: -1;
-  background-image: url('/background3.jpg');
+  background-image: url('/background.png');
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -22,25 +22,34 @@ body {
   background-position: center;
 }
 
-/* project card bg colors */
+/* Text shadow for landing */
 
-.greyGradient {
-  background-image: linear-gradient(150deg, #282A35 60%, #1D1E26 100%);
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.greyGradientTwo {
-  background-image: linear-gradient(150deg, #282A35 30%, #1D1E26 100%);
+/* Button fill animation to right with "transparent" */
+
+.buttonHoverTransparent {
+  background-image: linear-gradient(#313C55, #313C55);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s;
 }
 
-/* button hover effect */
+.buttonHoverTransparent:hover {
+  background-size: 100% 100%;
+}
 
-.buttonHover {
+/* Button fill animation to right with seagreen */
+
+.buttonHoverSeagreen {
   background-image: linear-gradient(#02FFB3,#02FFB3);
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: .4s;
 }
 
-.buttonHover:hover {
+.buttonHoverSeagreen:hover {
   background-size: 100% 100%;
 }
