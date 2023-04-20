@@ -13,7 +13,7 @@ const ProjectCards = () => {
             number: 1,
             name: "Gradient Wizard",
             description: "A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen.",
-            stack: ["React" , "|" , "Django" , "|" , "Docker" , "|" , "Tailwind CSS" , "|" , "OpenAI API"],
+            stack: ["React" , "|" , "Django" , "|" , "Docker" , "|" , "TailwindCSS" , "|" , "OpenAI API"],
             live: ["https://gradientwizard.io/"],
             github: "https://github.com/andfinsand/gradient-wizard",
             image: "gradientwizardThumb.PNG",
@@ -22,7 +22,7 @@ const ProjectCards = () => {
             number: 2,
             name: "Futurecap",
             description: "Entry for the Evmos-Covalent #OneMillionWallets Hackathon. A Django web app utilizing the Covalent Unified API for the Evmos blockchain serving the Cosmos ecosystem. Predict the price of Token A, if it had the market cap of Token B. Only tokens available from Diffusion Finance.",
-            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "REST API"],
+            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "TailwindCSS" , "|" , "REST API"],
             live: ["https://futurecap.up.railway.app/"],
             github: "https://github.com/dna-projects/market-cap-transform",
             image: "futurecapThumb.png",
@@ -31,7 +31,7 @@ const ProjectCards = () => {
             number: 3,
             name: "Apefolio",
             description: "A Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
-            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "Tailwind CSS" , "|" , "SQLite"],
+            stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "TailwindCSS" , "|" , "SQLite"],
             live: ["1", "https://www.youtube.com/watch?v=cQ7iAzpAaRA"],
             github: "https://github.com/colord/crypto-portfolio",
             image: "apefolioThumb.PNG",
@@ -40,7 +40,7 @@ const ProjectCards = () => {
             number: 4,
             name: "Token Records",
             description: "A Flask web app to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
-            stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "Bootstrap CSS" , "|" , "MySQL"],
+            stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "BootstrapCSS" , "|" , "MySQL"],
             live: ["http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com"],
             github: "https://github.com/andfinsand/token-records",
             image: "tokenRecordsThumb.png",
@@ -49,7 +49,7 @@ const ProjectCards = () => {
             number: 5,
             name: "Cool Gym Hwy49",
             description: "Website for a family owned business, Cool Gym, located in Cool California. Sign up for a membership, check out the facilities, and view upcoming classes on the monthly calendar.",
-            stack: ["React" , "|" , "NextJS" , "|" , "Typescript" , "|" , "Tailwind CSS" , "|" , "GraphQL"],
+            stack: ["React" , "|" , "NextJS" , "|" , "Typescript" , "|" , "TailwindCSS" , "|" , "GraphQL"],
             live: ["https://coolgymhwy49.netlify.app/"],
             github: "https://github.com/CoolGymHwy49/cool-gym-hwy-49",
             image: "coolGymHwy49Thumb.PNG",
@@ -58,7 +58,7 @@ const ProjectCards = () => {
 
     return (
         <div id="projects">
-            <div className="flex flex-col pb-36 px-10 sm:px-20">
+            <div className="flex flex-col pb-36 sm:px-20">
             <ProjectsTitle />
 
                 {/* Project cards */}
@@ -82,7 +82,7 @@ const ProjectCards = () => {
                                 <div className="card-body self-center items-left text-left text-lightblue px-1 pb-2 sm:px-2 lg:w-1/2 lg:py-1 lg:pr-0 lg:pl-12">
 
                                     {/* Project title */}
-                                    <h1 className="card-title self-center tracking-wide text-2xl font-semibold sm:self-start">{project.name}</h1>
+                                    <h1 className="card-title self-center tracking-wide text-xl font-semibold sm:self-start sm:text-2xl">{project.name}</h1>
 
                                     {/* Project description */}
                                     <p className="self-center text-sm font-normal mt-3">{project.description}</p>
