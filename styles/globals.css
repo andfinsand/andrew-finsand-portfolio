@@ -53,3 +53,24 @@ body {
 .buttonHoverSeagreen:hover {
   background-size: 100% 100%;
 }
+
+/* Modal to enlarge image on click */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Enlarged Image */
+.enlarged-image {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 8px;
+}
