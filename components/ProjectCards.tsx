@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
-import Head from 'next/head'
+import React, { useState, useEffect } from 'react'
 import ProjectsTitle from './ProjectsTitle'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const ProjectCards = () => {
+    const [showModal, setShowModal] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
     useEffect(() => {
         Aos.init({duration: 1500});
     }, []);
@@ -73,11 +75,18 @@ const ProjectCards = () => {
 
                                 {/* Project image */}
                                 <figure className="drop-shadow-customDark lg:w-[530px] lg:pl-2">
-                                    <img
-                                        src={project.image}
-                                        alt="Project Image"
-                                        className="rounded"
-                                    />
+                                    <button>
+                                        <img
+                                            src={project.image}
+                                            alt="Project Image"
+                                            className="rounded"
+                                            onClick={() => {
+                                                setSelectedImage(project.image);
+                                                setShowModal(true)
+                                                console.log(showModal)
+                                            }}
+                                        />
+                                    </button>
                                 </figure>
                                 <div className="card-body self-center items-left text-left text-lightblue px-1 pb-2 sm:px-2 lg:w-1/2 lg:py-1 lg:pr-0 lg:pl-12">
 
@@ -132,6 +141,23 @@ const ProjectCards = () => {
                             </div>
                         </div>
                     )}
+
+                    {/* Create modal for image when clicked and exit when clicked outside of modal. */}
+                    {showModal && (
+                    <div
+                        className="image-modal"
+                        onClick={(event) => {
+                        const target = event.target as HTMLElement;
+                        if (!target.closest('.enlarged-image')) {
+                            setShowModal(false);
+                        }
+                        }}
+                    >
+                        {/* Enlarged image */}
+                        <img src={selectedImage} alt="Enlarged Project Image" className="enlarged-image" />
+                    </div>
+                    )}
+
                 </div>
             </div>
 
