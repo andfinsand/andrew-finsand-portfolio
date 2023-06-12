@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <div className="flex flex-col" id="home">
       <Head>
         <title>
-          Andrew Finsand Portfolio - Full Stack Python Developer | Django | Flask | React | MySQL
+          Andrew Finsand - Full Stack Developer | Python | Django | React
         </title>
         <meta
           name="keywords"
