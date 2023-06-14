@@ -16,11 +16,15 @@ const Home: NextPage = () => {
         </title>
         <meta
           name="keywords"
-          content="Andrew Finsand, Full Stack Developer, Portfolio, Python, Django, Flask, React, MySQL, Javascript, HTML5, CSS3, Python, Django, Flask, React, web development, APIs, Figma" 
+          content="Andrew Finsand, Full Stack Developer, Portfolio, Python, Django, Flask, React, MySQL, Javascript, HTML5, CSS3, Tailwind, Web Development, APIs, Figma, Docker, AI"
         />
         <meta
           name="viewport"
           content="width=device-width"
+        />
+        <meta
+          name="description"
+          content="Andrew Finsand, Full Stack Developer, Web Developer, Python, Django, React, Docker, AI, API"
         />
       </Head>
       <Navbar />
