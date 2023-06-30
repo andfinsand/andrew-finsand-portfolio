@@ -37,7 +37,7 @@ const About = () => {
       {/* About me bio */}
       <div className="flex flex-col lg:col-span-3">
         <div className="text-center tracking-wide text-xl  text-lightblue font-semibold mb-5">
-          <p>Welcome to my <span className="text-seagreen">Portfolio!</span></p>
+          <h2>Welcome to my <span className="text-seagreen">Portfolio!</span></h2>
         </div>
         <div className = "flex flex-col">
           <div className="text-lightblue text-sm my-4 sm:px-20 lg:mx-5 lg:mb-3 lg:px-1 xl:px-5 self-center">
