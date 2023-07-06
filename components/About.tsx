@@ -5,6 +5,7 @@ const About = () => {
   return (
     <div className="flex flex-col self-center py-36 px-10 max-w-[1400px] lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
       <Head>
+        <title>About Me - Andrew Finsand's Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
