@@ -7,6 +7,7 @@ const About = () => {
       <Head>
         <title>About Me - Andrew Finsand's Portfolio</title>
         <meta name="description" content="Andrew is a creative and driven full-stack software developer with a passion for crafting user-friendly web applications using Python, Django, React, and Tailwind CSS." />
+        <meta name="keywords" content="Andrew Finsand, portfolio, software developer, Python, Django, React, Tailwind CSS, AI, OpenAI" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Kanit:wght@200;300;500&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
