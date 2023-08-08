@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <div className="flex flex-col text-center mt-56 mb-36">
       <div className="tracking-wide text-lg text-seagreen">
-          <p>Full Stack Python Developer</p>
+          <p>Full Stack Developer</p>
       </div>
       <div className="text-shadow tracking-widest text-center text-5xl text-blue font-medium m-5">
           <p>Andrew Finsand</p>
