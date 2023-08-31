@@ -13,6 +13,15 @@ const ProjectCards = () => {
     const projects = [
         {
             number: 1,
+            name: "JCC Heating and Cooling",
+            description: "Commercial website for JCC Heating and Cooling, a family-owned HVAC business serving Contra Costa, California. This responsive website serves as an online presence for showcasing their services, company history, and service areas to customers across the region.",
+            stack: ["WordPress" , "|" , "JavaScript" , "|" , "HTML" , "|" , "CSS" , "|" , "PHP"],
+            live: ["https://jccheatingandcooling.com/"],
+            github: "none",
+            image: "jccThumb.PNG",
+        },
+        {
+            number: 2,
             name: "Gradient Wizard",
             description: "A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen.",
             stack: ["React" , "|" , "Django" , "|" , "Docker" , "|" , "TailwindCSS" , "|" , "OpenAI API"],
@@ -21,7 +30,7 @@ const ProjectCards = () => {
             image: "gradientwizardThumb.PNG",
         },
         {
-            number: 2,
+            number: 3,
             name: "Futurecap",
             description: "Entry for the Evmos-Covalent #OneMillionWallets Hackathon. A Django web app utilizing the Covalent Unified API for the Evmos blockchain serving the Cosmos ecosystem. Predict the price of Token A, if it had the market cap of Token B. Only tokens available from Diffusion Finance.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "TailwindCSS" , "|" , "REST API"],
@@ -30,7 +39,7 @@ const ProjectCards = () => {
             image: "futurecapThumb.png",
         },
         {
-            number: 3,
+            number: 4,
             name: "Apefolio",
             description: "A Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.",
             stack: ["Python" , "|" , "Django" , "|" , "HTML5" , "|" , "TailwindCSS" , "|" , "SQLite"],
@@ -38,15 +47,15 @@ const ProjectCards = () => {
             github: "https://github.com/colord/crypto-portfolio",
             image: "apefolioThumb.PNG",
         },
-        {
-            number: 4,
-            name: "Token Records",
-            description: "A Flask web app to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
-            stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "BootstrapCSS" , "|" , "MySQL"],
-            live: ["http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com"],
-            github: "https://github.com/andfinsand/token-records",
-            image: "tokenRecordsThumb.png",
-        },
+        // {
+        //     number: 4,
+        //     name: "Token Records",
+        //     description: "A Flask web app to track NFT trades made on the Solana blockchain. Record profits and losses, monitor live floor prices, and manage trade status!",
+        //     stack: ["Python" , "|" , "Flask" , "|" , "HTML5" , "|" , "BootstrapCSS" , "|" , "MySQL"],
+        //     live: ["http://ec2-52-53-218-33.us-west-1.compute.amazonaws.com"],
+        //     github: "https://github.com/andfinsand/token-records",
+        //     image: "tokenRecordsThumb.png",
+        // },
         {
             number: 5,
             name: "Cool Gym Hwy49",
@@ -135,7 +144,20 @@ const ProjectCards = () => {
                                                 );
                                             }
                                         })}
-                                        <a href={project.github} target="_blank"><button className="w-20 h-10 tracking-wider text-xs text-seagreen font-medium bg-transparent border border-seagreen rounded-sm buttonHoverSeagreen hover:text-dark">Github</button></a>
+                                        {/* Show github link if available */}
+                                        {project.github !== "none" && (
+                                            <a href={project.github} target="_blank">
+                                            <button className="w-20 h-10 tracking-wider text-xs text-seagreen font-medium bg-transparent border border-seagreen rounded-sm buttonHoverSeagreen hover:text-dark">
+                                                Github
+                                            </button>
+                                            </a>
+                                        )}
+                                        {/* Hide github link if unavailable */}
+                                        {project.github === "none" && (
+                                            <button className="w-20 h-10 tracking-wider text-xs text-seagreen font-medium bg-transparent border border-seagreen rounded-sm buttonHoverSeagreen hover:text-dark visible hidden lg:invisible lg:block">
+                                            Github
+                                            </button>
+                                        )}
                                     </div>
                                 </div>
                             </div>
