@@ -41,7 +41,6 @@ const Home: NextPage = () => {
                 "clientId": "6a6d2b9c-bcca-4ae8-b436-b6d58ed79695",
                 "lazySocket": true,
                 "botName": "Andrew's AI Assistant",
-                "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/44dd69ea-88cf-4c0b-90ce-0b7d77a1cabe/v5841/style.css",
                 "frontendVersion": "v0"
               });
             `,
