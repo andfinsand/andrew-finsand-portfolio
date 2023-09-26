@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useEffect } from 'react'
 
 import Navbar from '../components/Navbar'
 import Landing from '../components/Landing'
@@ -8,6 +9,14 @@ import ProjectCards from '../components/ProjectCards'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+    const iframe = document.querySelector('iframe')
+    if (iframe) {
+      iframe.style.backgroundColor = 'transparent'
+    }
+  }, [])
+
   return (
     <div className="flex flex-col" id="home">
       <Head>
