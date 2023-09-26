@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
 
+  // Remove iframe background color in chatbot
   useEffect(() => {
     const iframe = document.querySelector('iframe')
     if (iframe) {
