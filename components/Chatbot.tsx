@@ -8,6 +8,7 @@ const Chatbot = () => {
             bottom: '5px',
             right: '0px',
             zIndex: '9999',
+            colorScheme: 'none',
         }}
         >
             <iframe
