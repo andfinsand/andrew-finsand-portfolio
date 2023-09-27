@@ -73,13 +73,13 @@ const ProjectCards = () => {
             <ProjectsTitle />
 
                 {/* Project cards */}
-                <div className="flex flex-col self-center mt-36 max-w-[350px] sm:max-w-[700px] lg:flex lg:min-w-[1100px] lg:max-w-[1285px]">
+                <div className="flex flex-col self-center mt-36 max-w-[360px] sm:max-w-[700px] lg:flex lg:min-w-[1100px] lg:max-w-[1285px]">
                     {projects.map(project =>
                         <div key={project.number} className="flex justify-center">
                             <div
                                 data-aos="fade-up"
                                 data-aos-once="true"
-                                className="card backdrop-blur-xl bg-projectblue bg-opacity-20 shadow-xl border-2 border-blue border-opacity-20 rounded h-max my-8 p-6 lg:flex-row lg:w-5/6"
+                                className="card backdrop-blur-xl bg-projectblue bg-opacity-20 shadow-xl border-2 border-blue border-opacity-20 rounded h-max my-8 p-5 lg:flex-row lg:w-5/6"
                             >
 
                                 {/* Project image */}

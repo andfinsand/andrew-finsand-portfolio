@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 
 const About = () => {
   return (
-    <div className="flex flex-col self-center py-36 px-10 max-w-[1400px] lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
+    <div className="flex flex-col self-center py-36 px-6 max-w-[1400px] lg:grid lg:grid-cols-5 lg:gap-4 lg:px-36" id="about">
       <Head>
         <title>About Me - Andrew Finsand's Portfolio</title>
         <meta name="description" content="Andrew Finsand is a creative and driven full-stack software developer with a passion for crafting user-friendly web applications using Python, Django, React, and Tailwind CSS." />
