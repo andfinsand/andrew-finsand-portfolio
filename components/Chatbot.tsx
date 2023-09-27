@@ -7,12 +7,11 @@ const Chatbot = () => {
         const iframe = document.getElementById('chatbot-iframe');
 
         if (iframe) {
-            iframe.onload = () => {
-                iframe.style.position = 'fixed';
-                iframe.style.bottom = '5px';
-                iframe.style.right = '0px';
-            };
+            iframe.style.position = 'fixed';
+            iframe.style.bottom = '5px';
+            iframe.style.right = '0px';
         }
+
     }, []);
 
     return (
