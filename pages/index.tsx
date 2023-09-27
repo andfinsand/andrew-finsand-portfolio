@@ -1,24 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect } from 'react'
 
 import Navbar from '../components/Navbar'
 import Landing from '../components/Landing'
 import About from '../components/About'
 import ProjectCards from '../components/ProjectCards'
 import Footer from '../components/Footer'
+import Chatbot from '../components/Chatbot'
 
 const Home: NextPage = () => {
-
-  // Remove iframe background color for chatbot bubble
-  useEffect(() => {
-    const iframe = document.querySelector('iframe')
-    if (iframe) {
-      iframe.style.backgroundColor = 'transparent'
-    }
-  }, [])
-
-  return (
+return (
     <div className="flex flex-col" id="home">
       <Head>
         <title>
@@ -36,10 +27,6 @@ const Home: NextPage = () => {
           name="description"
           content="Andrew Finsand, Full Stack Developer, Web Developer, Python, Django, React, Docker, AI, API"
         />
-
-        {/* Botpress API */}
-        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/6a6d2b9c-bcca-4ae8-b436-b6d58ed79695/webchat/config.js" defer></script>
       </Head>
       <Navbar />
       <div id="background"></div>
@@ -47,6 +34,7 @@ const Home: NextPage = () => {
       <About />
       <ProjectCards />
       <Footer />
+      <Chatbot />
     </div>
   )
 }
