@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Chatbot = () => {
+
+    // Prevent chat bubble loading from the top and sliding down to fixed position
+    useEffect(() => {
+        const iframe = document.getElementById('chatbot-iframe');
+
+        if (iframe) {
+            iframe.onload = () => {
+                iframe.style.position = 'fixed';
+                iframe.style.bottom = '5px';
+                iframe.style.right = '0px';
+            };
+        }
+    }, []);
+
     return (
         <div
         style={{
@@ -12,7 +26,8 @@ const Chatbot = () => {
         }}
         >
             <iframe
-                style={{ border: 'none', width: '360px', height: '100vh' }}
+                id="chatbot-iframe"
+                style={{ border: 'none', width: '400px', height: '100vh' }}
                 srcDoc={`<html><body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
                     <script>
                         window.botpressWebChat.init({
