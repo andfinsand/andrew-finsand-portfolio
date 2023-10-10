@@ -2,19 +2,56 @@ import React, { useEffect } from 'react';
 
 const Chatbot = () => {
 
-    // Prevent chat bubble loading from the top and sliding down to fixed position
+    // Update width of iframe based on state of class "bp-widget-widget" or "bp-widget-side".
+    // Use smaller iframe width when the chatbot is closed to prevent the iframe from obstructing any buttons/elements. Otherwise the default iframe width prevent's interacting with any buttons.
     useEffect(() => {
-        const iframe = document.getElementById('chatbot-iframe');
+        const chatbotIframe = document.getElementById('chatbot-iframe') as HTMLIFrameElement;
+        let chatbotIframeLoaded = false;
 
-        if (iframe) {
-            iframe.style.position = 'fixed';
-            iframe.style.bottom = '5px';
-            iframe.style.right = '0px';
-        }
+        chatbotIframe.onload = () => {
+            chatbotIframeLoaded = true;
+            const chatbotIframeWindow = chatbotIframe.contentWindow;
 
-    }, []);
+            // If loaded with content window
+            if (chatbotIframeLoaded && chatbotIframeWindow) {
+                const chatbotIframeDoc = chatbotIframe.contentDocument || chatbotIframeWindow.document;
+                const chatbotIframeBody = chatbotIframeDoc.body;
+
+                const observer = new MutationObserver((mutationsList) => {
+                for (const mutation of mutationsList) {
+
+                    // Update width on child/attribute changes 
+                    if (mutation.type === 'childList' || mutation.type === 'attributes') {
+                    const bpWidgetWidget = chatbotIframeBody.querySelector('.bp-widget-widget');
+                    const bpWidgetSide = chatbotIframeBody.querySelector('.bp-widget-side');
+                    const chatbotIframeStyle = chatbotIframe.style;
+
+                    if (bpWidgetWidget) {
+                        // console.log('Child element has class bp-widget-widget');
+                        chatbotIframeStyle.width = '90px';
+                    } else if (bpWidgetSide) {
+                        // console.log('Child element has class bp-widget-side');
+                        chatbotIframeStyle.width = '400px';
+                    }
+                    }
+                }
+                });
+
+                observer.observe(chatbotIframeBody, { childList: true, attributes: true, subtree: true });
+
+                // Disconnect observer on unmount
+                return () => {
+                observer.disconnect();
+                };
+            }
+        };
+
+        chatbotIframe.style.width = '90px';
+
+        }, []);
 
     return (
+        // Wrap iframe to prevent white background color.
         <div
         style={{
             position: 'fixed',
@@ -24,9 +61,10 @@ const Chatbot = () => {
             colorScheme: 'none',
         }}
         >
+            {/* Configure chatbot manually */}
             <iframe
                 id="chatbot-iframe"
-                style={{ border: 'none', width: '400px', height: '100vh' }}
+                style={{ border: 'none', width: 'auto', height: '100vh' }}
                 srcDoc={`<html><body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
                     <script>
                         window.botpressWebChat.init({
