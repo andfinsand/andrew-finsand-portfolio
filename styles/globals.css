@@ -74,3 +74,8 @@ body {
   max-height: 70%;
   border-radius: 8px;
 }
+
+button {
+  position: relative;
+  z-index: 9999;
+}
