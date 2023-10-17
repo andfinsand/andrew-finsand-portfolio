@@ -25,7 +25,11 @@ return (
         />
         <meta
           name="description"
-          content="Andrew Finsand, Full Stack Developer, Web Developer, Python, Django, React, Docker, AI, API"
+          content="Andrew Finsand, Full Stack Developer, Web Developer, Python, Django, React, Docker, AI, API, WordPress"
+        />
+        <meta
+          name="author"
+          content="Andrew Finsand"
         />
       </Head>
       <Navbar />
