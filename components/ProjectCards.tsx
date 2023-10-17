@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ProjectsTitle from './ProjectsTitle'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Head from "next/head"
 
 const ProjectCards = () => {
     const [showModal, setShowModal] = useState(false);
@@ -69,6 +70,12 @@ const ProjectCards = () => {
 
     return (
         <div id="projects">
+            <Head>
+                <title>Andrew Finsand's Projects and Freelance Work - Full Stack</title>
+                <meta name="description" content="Explore Andrew Finsand's portfolio of projects and freelance work as a full-stack software developer. With expertise in Python, Django, React, Tailwind CSS, and WordPress, Andrew's projects showcase his creativity and passion for crafting user-friendly web applications." />
+                <meta name="keywords" content="Andrew, Finsand, portfolio, software developer, full stack developer, front end developer, Python, Django, React, Tailwind CSS, AI, OpenAI, WordPress, projects, freelance" />
+                <meta name="author" content="Andrew Finsand"></meta>
+            </Head>
             <div className="flex flex-col pb-36 sm:px-20">
             <ProjectsTitle />
 
