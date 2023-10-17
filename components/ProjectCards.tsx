@@ -71,8 +71,8 @@ const ProjectCards = () => {
     return (
         <div id="projects">
             <Head>
-                <title>Andrew Finsand's Projects and Freelance Work - Full Stack</title>
-                <meta name="description" content="Explore Andrew Finsand's portfolio of projects and freelance work as a full-stack software developer. With expertise in Python, Django, React, Tailwind CSS, and WordPress, Andrew's projects showcase his creativity and passion for crafting user-friendly web applications." />
+                <title>Andrew Finsand's Projects and Freelance Work</title>
+                <meta name="description" content="Explore Andrew Finsand's portfolio of projects and freelance work as a full-stack software developer." />
                 <meta name="keywords" content="Andrew, Finsand, portfolio, software developer, full stack developer, front end developer, Python, Django, React, Tailwind CSS, AI, OpenAI, WordPress, projects, freelance" />
                 <meta name="author" content="Andrew Finsand"></meta>
             </Head>
