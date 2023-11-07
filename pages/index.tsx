@@ -31,6 +31,7 @@ return (
           name="author"
           content="Andrew Finsand"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <div id="background"></div>
