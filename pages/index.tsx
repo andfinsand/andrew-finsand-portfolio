@@ -32,6 +32,7 @@ return (
           content="Andrew Finsand"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="NaDSZfAj1DbjfdG6_tgPr7XvX2ar9z36JMEQPvjkcds" />
       </Head>
       <Navbar />
       <div id="background"></div>
